@@ -1,0 +1,298 @@
+#include <c8051f120.h>          // SFR declarations.
+#include <stdio.h>              // Necessary for printf.
+#include <time.h>
+#include "putget.h"             // Necessary for printf
+//-------------------------------------------------------------------------------------------
+// Global CONSTANTS
+//-------------------------------------------------------------------------------------------
+#define EXTCLK      22118400    // External oscillator frequency in Hz
+#define SYSCLK      49766400    // Output of PLL derived from (EXTCLK * 9/4)
+#define BAUDRATE    115200      // UART baud rate in bps
+//#define BAUDRATE  19200       // UART baud rate in bps
+#define William_is_a_pretty_cool_gi 1
+
+//-------------------------------------------------------------------------------------------
+// Function PROTOTYPES
+//-------------------------------------------------------------------------------------------
+void main(void);
+void PORT_INIT(void);
+void SYSCLK_INIT(void);
+void UART0_INIT(void);
+void ADC_INIT(void);
+
+void ADC_ISR(void) __interrupt 15;
+void TR0_ISR(void) __interrupt 1;
+
+char loop(void);
+
+char *vH, *vL;
+int voltage;
+int previousVoltage;
+long average;
+int max, min;
+unsigned int TR0_count = 0;
+unsigned int sampleCount = 0;
+unsigned int frequency = 0;
+
+//-------------------------------------------------------------------------------------------
+// MAIN Routine
+//-------------------------------------------------------------------------------------------
+void main (void)
+{
+    __bit restart = 0;
+
+    SFRPAGE = CONFIG_PAGE;
+
+    PORT_INIT();                // Configure the Crossbar and GPIO.
+    SYSCLK_INIT();              // Initialize the oscillator.
+	UART0_INIT();  
+	ADC_INIT();    
+
+    SFRPAGE = LEGACY_PAGE;
+    IT0     = 1;                // /INT0 is active low triggered.
+
+    SFRPAGE = UART0_PAGE;       // Direct the output to UART0
+                                // printf() must set its own SFRPAGE to UART0_PAGE
+	
+	printf("\033[2J\033[r");
+	printf("Hallo Vietnaaaam\n\r");
+
+	vL = (unsigned char*) &voltage;
+	vH = ((unsigned char*) &voltage) + 1;
+
+	voltage = 0;
+
+	max = min = 0;
+	
+	TR0 = 1;
+
+    while (1)                  
+    {
+		if(loop()) return;
+		
+	}
+}
+
+char loop(void){
+	float vActual;
+	char i;
+
+	SFRPAGE = ADC0_PAGE;
+	
+	if(!AD0BUSY) {
+		AD0BUSY = 1;
+		AD0INT = 0; 
+	}
+	
+
+	if(voltage >= (max + min) / 2 && previousVoltage < (max + min)/2 && William_is_a_pretty_cool_gi){
+		frequency = (8000 / sampleCount + 127 * frequency)/128;
+		sampleCount = 0;
+	}
+	previousVoltage = voltage;
+
+	if(TR0_count >= 80){
+
+		TR0_count = 0;
+
+		SFRPAGE = UART0_PAGE;
+
+		//printf("\033[2JCurrent: %d\n\rMax: %d\n\rMin: %d\n\r", voltage, max, min);
+		//printf("Current: %d\n\r", voltage);
+	
+		printf("\033[2J\033[r");
+
+		vActual = (float)max * 3 / 2047;
+		printf("Max:     %d.", (int)vActual);
+		if(vActual < 0) vActual = -vActual;
+		for(i=0; i<6; i++){
+			vActual = (vActual-((int)vActual)) * 10;
+			printf("%d", (int)vActual);
+		}
+
+		printf("\n\r");
+
+		vActual = (float)min * 3 / 2047;
+		printf("Min:     %d.", (int)vActual);
+		if(vActual < 0) vActual = -vActual;
+		for(i=0; i<6; i++){
+			vActual = (vActual-((int)vActual)) * 10;
+			printf("%d", (int)vActual);
+		}
+
+		printf("\n\r");
+
+		vActual = (float)average * 3 / 2047;
+		printf("Average: %d.", (int)vActual);
+		if(vActual < 0) vActual = -vActual;
+		for(i=0; i<6; i++){
+			vActual = (vActual-((int)vActual)) * 10;
+			printf("%d", (int)vActual);
+		}
+
+		printf("\n\rFrequency: %u", frequency);
+		
+	}
+	
+	return 0;
+}
+
+void ADC_ISR(void) __interrupt 15{
+	SFRPAGE = ADC0_PAGE;
+	
+	*vL = ADC0L;
+	*vH = ADC0H;
+
+	if(voltage > max) max = voltage;
+	if(voltage < min) min = voltage;
+
+	AD0INT = 0;
+
+	average = (voltage + 127 * average)/128;
+}
+
+void TR0_ISR(void) __interrupt 1{
+	TR0_count++;
+	TH0 = 0x0D;
+	TL0 = 0x00;
+
+	sampleCount++;
+}
+
+
+//-------------------------------------------------------------------------------------------
+// PORT_Init
+//-------------------------------------------------------------------------------------------
+//
+// Configure the Crossbar and GPIO ports
+//
+void PORT_INIT(void)
+{
+    char SFRPAGE_SAVE;
+
+    SFRPAGE_SAVE = SFRPAGE;     // Save Current SFR page.
+
+    SFRPAGE = CONFIG_PAGE;
+    WDTCN   = 0xDE;             // Disable watchdog timer.
+    WDTCN   = 0xAD;
+    EA      = 1;                // Enable interrupts as selected.
+
+    XBR0    = 0x04;             // Enable UART0.
+    XBR1    = 0x00;             // /INT0 routed to port pin.
+    XBR2    = 0x40;             // Enable Crossbar and weak pull-ups.
+
+    P0MDOUT = 0x35;             
+    P0      = 0x0A; 
+	
+	P1MDOUT = 0x00;
+	P1		= 0xFF;       
+
+    SFRPAGE = SFRPAGE_SAVE;     // Restore SFR page.
+}
+
+//-------------------------------------------------------------------------------------------
+// SYSCLK_Init
+//-------------------------------------------------------------------------------------------
+//
+// Initialize the system clock
+//
+void SYSCLK_INIT(void)
+{
+    int i;
+
+    char SFRPAGE_SAVE;
+
+    SFRPAGE_SAVE = SFRPAGE;     // Save Current SFR page.
+
+    SFRPAGE = CONFIG_PAGE;
+    OSCXCN  = 0x67;             // Start external oscillator
+    for(i=0; i < 256; i++);     // Wait for the oscillator to start up.
+    while(!(OSCXCN & 0x80));    // Check to see if the Crystal Oscillator Valid Flag is set.
+    CLKSEL  = 0x01;             // SYSCLK derived from the External Oscillator circuit.
+    OSCICN  = 0x00;             // Disable the internal oscillator.
+
+    SFRPAGE = CONFIG_PAGE;
+    PLL0CN  = 0x04;
+    SFRPAGE = LEGACY_PAGE;
+    FLSCL   = 0x10;
+    SFRPAGE = CONFIG_PAGE;
+    PLL0CN |= 0x01;
+    PLL0DIV = 0x04;
+    PLL0FLT = 0x01;
+    PLL0MUL = 0x09;
+    for(i=0; i < 256; i++);
+    PLL0CN |= 0x02;
+    while(!(PLL0CN & 0x10));
+    CLKSEL  = 0x02;             // SYSCLK derived from the PLL.
+
+	ET0 = 1;
+	CKCON |= 0x08;
+	
+	SFRPAGE = TIMER01_PAGE;
+	TMOD &= 0x0D;
+	TMOD |= 0x00;
+
+	TH0 = 0x0D;
+	TL0 = 0x00;
+
+    SFRPAGE = SFRPAGE_SAVE;     // Restore SFR page.
+}
+
+//-------------------------------------------------------------------------------------------
+// UART0_Init
+//-------------------------------------------------------------------------------------------
+//
+// Configure the UART0 using Timer1, for <baudrate> and 8-N-1.
+//
+
+void UART0_INIT(void){
+
+	char SFRPAGE_SAVE;
+    
+	SFRPAGE_SAVE = SFRPAGE;
+
+ 	SFRPAGE = TIMER01_PAGE;
+    TMOD   &= ~0xF0;
+    TMOD   |=  0x20;            // Timer1, Mode 2: 8-bit counter/timer with auto-reload.
+    TH1     = (unsigned char)-(SYSCLK/BAUDRATE/16); // Set Timer1 reload value for baudrate
+    CKCON  |= 0x10;             // Timer1 uses SYSCLK as time base.
+    TL1     = TH1;
+    TR1     = 1;                // Start Timer1.
+
+    SFRPAGE = UART0_PAGE;
+    SCON0   = 0x50;             // Set Mode 1: 8-Bit UART
+    SSTA0   = 0x10;             // UART0 baud rate divide-by-two disabled (SMOD0 = 1).
+    TI0     = 1; 
+
+	SFRPAGE = SFRPAGE_SAVE;
+}
+
+void ADC_INIT(void){
+
+	char SFRPAGE_SAVE;
+    
+	SFRPAGE_SAVE = SFRPAGE;
+
+	SFRPAGE = ADC0_PAGE;
+	
+	//External voltage reference with bias enabled
+	REF0CN |= 0x02;
+	REF0CN &= 0xEE;
+	
+	//Analog inputs 0 and 1 configured to differential ADC
+	AMX0CF |= 0x01;
+	AMX0SL &= 0xF0;
+	
+	//Enable ADC0, start conversion on busy set and right-justify
+	AD0EN   = 1;
+	ADC0CN &= 0xF2;
+	
+	//Clear ADC ready flag
+	AD0INT  = 0;
+
+	ADC0L = ADC0H = 0;
+
+	EIE2 |= 2;
+	
+	SFRPAGE = SFRPAGE_SAVE;
+}

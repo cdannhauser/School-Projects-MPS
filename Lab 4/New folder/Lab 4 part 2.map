@@ -1,0 +1,2534 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  l_CABS                          
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l_XINIT                         
+C:   00000000  l_XISEG                         
+C:   00000000  l_XSEG                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  l_BIT_BANK                      
+C:   00000001  s_PSEG                          
+C:   00000001  s_XISEG                         
+C:   00000001  s_XSEG                          
+C:   00000002  l_BSEG_BYTES                    
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000006  l_ISEG                          
+C:   00000006  l_OSEG                          
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   0000000A  l_BSEG                          
+C:   0000000A  l_GSINIT2                       
+C:   0000000A  s_OSEG                          
+C:   0000000D  l_GSINIT                        
+C:   00000010  s_ISEG                          
+C:   00000010  s_REG_BANK_2                    
+C:   00000018  s_REG_BANK_3                    
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s__CODE                         
+C:   00000022  l_GSINIT3                       
+C:   00000022  s_BIT_BANK                      
+C:   0000002A  l_GSINIT4                       
+C:   00000059  s_SSEG                          
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000072  l_CONST                         
+C:   00000076  l_DSEG                          
+C:   00000081  l_HOME                          
+C:   00000081  s_GSINIT0                       
+C:   00000084  s_GSINIT1                       
+C:   00000084  s_GSINIT2                       
+C:   0000008E  s_GSINIT3                       
+C:   000000A7  l_SSEG                          
+C:   000000B0  s_GSINIT4                       
+C:   000000DA  s_GSINIT                        
+C:   000000DA  s_GSINIT5                       
+C:   000000E7  s_GSFINAL                       
+C:   000000EA  s_CSEG                          
+C:   00000100  l_IRAM                          
+C:   000012DA  l_CSEG                          
+C:   000013C4  s_CONST                         
+C:   00001436  s_XINIT                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _bp
+     00000080  G$P0$0$0                           part2retry
+     00000080  G$P0_0$0$0                         part2retry
+     00000080  _P0                                part2retry
+     00000080  _P0_0                              part2retry
+     00000081  G$P0_1$0$0                         part2retry
+     00000081  G$SP$0$0                           part2retry
+     00000081  _P0_1                              part2retry
+     00000081  _SP                                part2retry
+     00000082  G$DPL$0$0                          part2retry
+     00000082  G$P0_2$0$0                         part2retry
+     00000082  _DPL                               part2retry
+     00000082  _P0_2                              part2retry
+     00000083  G$DPH$0$0                          part2retry
+     00000083  G$P0_3$0$0                         part2retry
+     00000083  _DPH                               part2retry
+     00000083  _P0_3                              part2retry
+     00000084  G$P0_4$0$0                         part2retry
+     00000084  G$SFRPAGE$0$0                      part2retry
+     00000084  _P0_4                              part2retry
+     00000084  _SFRPAGE                           part2retry
+     00000085  G$P0_5$0$0                         part2retry
+     00000085  G$SFRNEXT$0$0                      part2retry
+     00000085  _P0_5                              part2retry
+     00000085  _SFRNEXT                           part2retry
+     00000086  G$P0_6$0$0                         part2retry
+     00000086  G$SFRLAST$0$0                      part2retry
+     00000086  _P0_6                              part2retry
+     00000086  _SFRLAST                           part2retry
+     00000087  G$P0_7$0$0                         part2retry
+     00000087  G$PCON$0$0                         part2retry
+     00000087  _P0_7                              part2retry
+     00000087  _PCON                              part2retry
+     00000088  G$CP0HYN0$0$0                      part2retry
+     00000088  G$CP1HYN0$0$0                      part2retry
+     00000088  G$CPT0CN$0$0                       part2retry
+     00000088  G$CPT1CN$0$0                       part2retry
+     00000088  G$FLHBUSY$0$0                      part2retry
+     00000088  G$FLSTAT$0$0                       part2retry
+     00000088  G$IT0$0$0                          part2retry
+     00000088  G$TCON$0$0                         part2retry
+     00000088  _CP0HYN0                           part2retry
+     00000088  _CP1HYN0                           part2retry
+     00000088  _CPT0CN                            part2retry
+     00000088  _CPT1CN                            part2retry
+     00000088  _FLHBUSY                           part2retry
+     00000088  _FLSTAT                            part2retry
+     00000088  _IT0                               part2retry
+     00000088  _TCON                              part2retry
+     00000089  G$CP0HYN1$0$0                      part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000089  G$CP1HYN1$0$0                      part2retry
+     00000089  G$CPT0MD$0$0                       part2retry
+     00000089  G$CPT1MD$0$0                       part2retry
+     00000089  G$IE0$0$0                          part2retry
+     00000089  G$PLL0CN$0$0                       part2retry
+     00000089  G$TMOD$0$0                         part2retry
+     00000089  _CP0HYN1                           part2retry
+     00000089  _CP1HYN1                           part2retry
+     00000089  _CPT0MD                            part2retry
+     00000089  _CPT1MD                            part2retry
+     00000089  _IE0                               part2retry
+     00000089  _PLL0CN                            part2retry
+     00000089  _TMOD                              part2retry
+     0000008A  G$CP0HYP0$0$0                      part2retry
+     0000008A  G$CP1HYP0$0$0                      part2retry
+     0000008A  G$IT1$0$0                          part2retry
+     0000008A  G$OSCICN$0$0                       part2retry
+     0000008A  G$TL0$0$0                          part2retry
+     0000008A  _CP0HYP0                           part2retry
+     0000008A  _CP1HYP0                           part2retry
+     0000008A  _IT1                               part2retry
+     0000008A  _OSCICN                            part2retry
+     0000008A  _TL0                               part2retry
+     0000008B  G$CP0HYP1$0$0                      part2retry
+     0000008B  G$CP1HYP1$0$0                      part2retry
+     0000008B  G$IE1$0$0                          part2retry
+     0000008B  G$OSCICL$0$0                       part2retry
+     0000008B  G$TL1$0$0                          part2retry
+     0000008B  _CP0HYP1                           part2retry
+     0000008B  _CP1HYP1                           part2retry
+     0000008B  _IE1                               part2retry
+     0000008B  _OSCICL                            part2retry
+     0000008B  _TL1                               part2retry
+     0000008C  G$CP0FIF$0$0                       part2retry
+     0000008C  G$CP1FIF$0$0                       part2retry
+     0000008C  G$OSCXCN$0$0                       part2retry
+     0000008C  G$TH0$0$0                          part2retry
+     0000008C  G$TR0$0$0                          part2retry
+     0000008C  _CP0FIF                            part2retry
+     0000008C  _CP1FIF                            part2retry
+     0000008C  _OSCXCN                            part2retry
+     0000008C  _TH0                               part2retry
+     0000008C  _TR0                               part2retry
+     0000008D  G$CP0RIF$0$0                       part2retry
+     0000008D  G$CP1RIF$0$0                       part2retry
+     0000008D  G$PLL0DIV$0$0                      part2retry
+     0000008D  G$TF0$0$0                          part2retry
+     0000008D  G$TH1$0$0                          part2retry
+     0000008D  _CP0RIF                            part2retry
+     0000008D  _CP1RIF                            part2retry
+     0000008D  _PLL0DIV                           part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000008D  _TF0                               part2retry
+     0000008D  _TH1                               part2retry
+     0000008E  G$CKCON$0$0                        part2retry
+     0000008E  G$CP0OUT$0$0                       part2retry
+     0000008E  G$CP1OUT$0$0                       part2retry
+     0000008E  G$PLL0MUL$0$0                      part2retry
+     0000008E  G$TR1$0$0                          part2retry
+     0000008E  _CKCON                             part2retry
+     0000008E  _CP0OUT                            part2retry
+     0000008E  _CP1OUT                            part2retry
+     0000008E  _PLL0MUL                           part2retry
+     0000008E  _TR1                               part2retry
+     0000008F  G$CP0EN$0$0                        part2retry
+     0000008F  G$CP1EN$0$0                        part2retry
+     0000008F  G$PLL0FLT$0$0                      part2retry
+     0000008F  G$PSCTL$0$0                        part2retry
+     0000008F  G$TF1$0$0                          part2retry
+     0000008F  _CP0EN                             part2retry
+     0000008F  _CP1EN                             part2retry
+     0000008F  _PLL0FLT                           part2retry
+     0000008F  _PSCTL                             part2retry
+     0000008F  _TF1                               part2retry
+     00000090  G$P1$0$0                           part2retry
+     00000090  G$P1_0$0$0                         part2retry
+     00000090  _P1                                part2retry
+     00000090  _P1_0                              part2retry
+     00000091  G$MAC0BL$0$0                       part2retry
+     00000091  G$P1_1$0$0                         part2retry
+     00000091  G$SSTA0$0$0                        part2retry
+     00000091  _MAC0BL                            part2retry
+     00000091  _P1_1                              part2retry
+     00000091  _SSTA0                             part2retry
+     00000092  G$MAC0BH$0$0                       part2retry
+     00000092  G$P1_2$0$0                         part2retry
+     00000092  _MAC0BH                            part2retry
+     00000092  _P1_2                              part2retry
+     00000093  G$MAC0ACC0$0$0                     part2retry
+     00000093  G$P1_3$0$0                         part2retry
+     00000093  _MAC0ACC0                          part2retry
+     00000093  _P1_3                              part2retry
+     00000094  G$MAC0ACC1$0$0                     part2retry
+     00000094  G$P1_4$0$0                         part2retry
+     00000094  _MAC0ACC1                          part2retry
+     00000094  _P1_4                              part2retry
+     00000095  G$MAC0ACC2$0$0                     part2retry
+     00000095  G$P1_5$0$0                         part2retry
+     00000095  _MAC0ACC2                          part2retry
+     00000095  _P1_5                              part2retry
+     00000096  G$MAC0ACC3$0$0                     part2retry
+     00000096  G$P1_6$0$0                         part2retry
+     00000096  G$SFRPGCN$0$0                      part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000096  _MAC0ACC3                          part2retry
+     00000096  _P1_6                              part2retry
+     00000096  _SFRPGCN                           part2retry
+     00000097  G$CLKSEL$0$0                       part2retry
+     00000097  G$MAC0OVR$0$0                      part2retry
+     00000097  G$P1_7$0$0                         part2retry
+     00000097  _CLKSEL                            part2retry
+     00000097  _MAC0OVR                           part2retry
+     00000097  _P1_7                              part2retry
+     00000098  G$RI$0$0                           part2retry
+     00000098  G$RI0$0$0                          part2retry
+     00000098  G$RI1$0$0                          part2retry
+     00000098  G$SCON$0$0                         part2retry
+     00000098  G$SCON0$0$0                        part2retry
+     00000098  G$SCON1$0$0                        part2retry
+     00000098  _RI                                part2retry
+     00000098  _RI0                               part2retry
+     00000098  _RI1                               part2retry
+     00000098  _SCON                              part2retry
+     00000098  _SCON0                             part2retry
+     00000098  _SCON1                             part2retry
+     00000099  G$SBUF$0$0                         part2retry
+     00000099  G$SBUF0$0$0                        part2retry
+     00000099  G$SBUF1$0$0                        part2retry
+     00000099  G$TI$0$0                           part2retry
+     00000099  G$TI0$0$0                          part2retry
+     00000099  G$TI1$0$0                          part2retry
+     00000099  _SBUF                              part2retry
+     00000099  _SBUF0                             part2retry
+     00000099  _SBUF1                             part2retry
+     00000099  _TI                                part2retry
+     00000099  _TI0                               part2retry
+     00000099  _TI1                               part2retry
+     0000009A  G$CCH0MA$0$0                       part2retry
+     0000009A  G$RB80$0$0                         part2retry
+     0000009A  G$RB81$0$0                         part2retry
+     0000009A  G$SPI0CFG$0$0                      part2retry
+     0000009A  _CCH0MA                            part2retry
+     0000009A  _RB80                              part2retry
+     0000009A  _RB81                              part2retry
+     0000009A  _SPI0CFG                           part2retry
+     0000009B  G$SPI0DAT$0$0                      part2retry
+     0000009B  G$TB80$0$0                         part2retry
+     0000009B  G$TB81$0$0                         part2retry
+     0000009B  _SPI0DAT                           part2retry
+     0000009B  _TB80                              part2retry
+     0000009B  _TB81                              part2retry
+     0000009C  G$P4MDOUT$0$0                      part2retry
+     0000009C  G$REN$0$0                          part2retry
+     0000009C  G$REN0$0$0                         part2retry
+     0000009C  G$REN1$0$0                         part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000009C  _P4MDOUT                           part2retry
+     0000009C  _REN                               part2retry
+     0000009C  _REN0                              part2retry
+     0000009C  _REN1                              part2retry
+     0000009D  G$MCE1$0$0                         part2retry
+     0000009D  G$P5MDOUT$0$0                      part2retry
+     0000009D  G$SM20$0$0                         part2retry
+     0000009D  G$SPI0CKR$0$0                      part2retry
+     0000009D  _MCE1                              part2retry
+     0000009D  _P5MDOUT                           part2retry
+     0000009D  _SM20                              part2retry
+     0000009D  _SPI0CKR                           part2retry
+     0000009E  G$P6MDOUT$0$0                      part2retry
+     0000009E  G$SM10$0$0                         part2retry
+     0000009E  _P6MDOUT                           part2retry
+     0000009E  _SM10                              part2retry
+     0000009F  G$P7MDOUT$0$0                      part2retry
+     0000009F  G$S1MODE$0$0                       part2retry
+     0000009F  G$SM00$0$0                         part2retry
+     0000009F  _P7MDOUT                           part2retry
+     0000009F  _S1MODE                            part2retry
+     0000009F  _SM00                              part2retry
+     000000A0  G$P2$0$0                           part2retry
+     000000A0  G$P2_0$0$0                         part2retry
+     000000A0  _P2                                part2retry
+     000000A0  _P2_0                              part2retry
+     000000A1  G$CCH0CN$0$0                       part2retry
+     000000A1  G$EMI0TC$0$0                       part2retry
+     000000A1  G$P2_1$0$0                         part2retry
+     000000A1  _CCH0CN                            part2retry
+     000000A1  _EMI0TC                            part2retry
+     000000A1  _P2_1                              part2retry
+     000000A2  G$CCH0TN$0$0                       part2retry
+     000000A2  G$EMI0CN$0$0                       part2retry
+     000000A2  G$P2_2$0$0                         part2retry
+     000000A2  G$_XPAGE$0$0                       part2retry
+     000000A2  _CCH0TN                            part2retry
+     000000A2  _EMI0CN                            part2retry
+     000000A2  _P2_2                              part2retry
+     000000A2  __XPAGE                            part2retry
+     000000A3  G$CCH0LC$0$0                       part2retry
+     000000A3  G$EMI0CF$0$0                       part2retry
+     000000A3  G$P2_3$0$0                         part2retry
+     000000A3  _CCH0LC                            part2retry
+     000000A3  _EMI0CF                            part2retry
+     000000A3  _P2_3                              part2retry
+     000000A4  G$P0MDOUT$0$0                      part2retry
+     000000A4  G$P2_4$0$0                         part2retry
+     000000A4  _P0MDOUT                           part2retry
+     000000A4  _P2_4                              part2retry
+     000000A5  G$P1MDOUT$0$0                      part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000A5  G$P2_5$0$0                         part2retry
+     000000A5  _P1MDOUT                           part2retry
+     000000A5  _P2_5                              part2retry
+     000000A6  G$P2MDOUT$0$0                      part2retry
+     000000A6  G$P2_6$0$0                         part2retry
+     000000A6  _P2MDOUT                           part2retry
+     000000A6  _P2_6                              part2retry
+     000000A7  G$P2_7$0$0                         part2retry
+     000000A7  G$P3MDOUT$0$0                      part2retry
+     000000A7  _P2_7                              part2retry
+     000000A7  _P3MDOUT                           part2retry
+     000000A8  G$EX0$0$0                          part2retry
+     000000A8  G$IE$0$0                           part2retry
+     000000A8  _EX0                               part2retry
+     000000A8  _IE                                part2retry
+     000000A9  G$ET0$0$0                          part2retry
+     000000A9  G$SADDR0$0$0                       part2retry
+     000000A9  _ET0                               part2retry
+     000000A9  _SADDR0                            part2retry
+     000000AA  G$EX1$0$0                          part2retry
+     000000AA  _EX1                               part2retry
+     000000AB  G$ET1$0$0                          part2retry
+     000000AB  _ET1                               part2retry
+     000000AC  G$ES$0$0                           part2retry
+     000000AC  G$ES0$0$0                          part2retry
+     000000AC  _ES                                part2retry
+     000000AC  _ES0                               part2retry
+     000000AD  G$ET2$0$0                          part2retry
+     000000AD  G$P1MDIN$0$0                       part2retry
+     000000AD  _ET2                               part2retry
+     000000AD  _P1MDIN                            part2retry
+     000000AF  G$EA$0$0                           part2retry
+     000000AF  _EA                                part2retry
+     000000B0  G$P3$0$0                           part2retry
+     000000B0  G$P3_0$0$0                         part2retry
+     000000B0  _P3                                part2retry
+     000000B0  _P3_0                              part2retry
+     000000B1  G$P3_1$0$0                         part2retry
+     000000B1  G$PSBANK$0$0                       part2retry
+     000000B1  _P3_1                              part2retry
+     000000B1  _PSBANK                            part2retry
+     000000B2  G$P3_2$0$0                         part2retry
+     000000B2  _P3_2                              part2retry
+     000000B3  G$P3_3$0$0                         part2retry
+     000000B3  _P3_3                              part2retry
+     000000B4  G$P3_4$0$0                         part2retry
+     000000B4  _P3_4                              part2retry
+     000000B5  G$P3_5$0$0                         part2retry
+     000000B5  _P3_5                              part2retry
+     000000B6  G$P3_6$0$0                         part2retry
+     000000B6  _P3_6                              part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B7  G$FLACL$0$0                        part2retry
+     000000B7  G$FLSCL$0$0                        part2retry
+     000000B7  G$P3_7$0$0                         part2retry
+     000000B7  _FLACL                             part2retry
+     000000B7  _FLSCL                             part2retry
+     000000B7  _P3_7                              part2retry
+     000000B8  G$IP$0$0                           part2retry
+     000000B8  G$PX0$0$0                          part2retry
+     000000B8  _IP                                part2retry
+     000000B8  _PX0                               part2retry
+     000000B9  G$PT0$0$0                          part2retry
+     000000B9  G$SADEN0$0$0                       part2retry
+     000000B9  _PT0                               part2retry
+     000000B9  _SADEN0                            part2retry
+     000000BA  G$AMX0CF$0$0                       part2retry
+     000000BA  G$AMX2CF$0$0                       part2retry
+     000000BA  G$PX1$0$0                          part2retry
+     000000BA  _AMX0CF                            part2retry
+     000000BA  _AMX2CF                            part2retry
+     000000BA  _PX1                               part2retry
+     000000BB  G$AMX0SL$0$0                       part2retry
+     000000BB  G$AMX2SL$0$0                       part2retry
+     000000BB  G$PT1$0$0                          part2retry
+     000000BB  _AMX0SL                            part2retry
+     000000BB  _AMX2SL                            part2retry
+     000000BB  _PT1                               part2retry
+     000000BC  G$ADC0CF$0$0                       part2retry
+     000000BC  G$ADC2CF$0$0                       part2retry
+     000000BC  G$PS$0$0                           part2retry
+     000000BC  G$PS0$0$0                          part2retry
+     000000BC  _ADC0CF                            part2retry
+     000000BC  _ADC2CF                            part2retry
+     000000BC  _PS                                part2retry
+     000000BC  _PS0                               part2retry
+     000000BD  G$PT2$0$0                          part2retry
+     000000BD  _PT2                               part2retry
+     000000BE  G$ADC0L$0$0                        part2retry
+     000000BE  G$ADC2$0$0                         part2retry
+     000000BE  _ADC0L                             part2retry
+     000000BE  _ADC2                              part2retry
+     000000BF  G$ADC0H$0$0                        part2retry
+     000000BF  _ADC0H                             part2retry
+     000000C0  G$MAC0N$0$0                        part2retry
+     000000C0  G$MAC0STA$0$0                      part2retry
+     000000C0  G$SMB0CN$0$0                       part2retry
+     000000C0  G$SMBTOE$0$0                       part2retry
+     000000C0  _MAC0N                             part2retry
+     000000C0  _MAC0STA                           part2retry
+     000000C0  _SMB0CN                            part2retry
+     000000C0  _SMBTOE                            part2retry
+     000000C1  G$MAC0AL$0$0                       part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000C1  G$MAC0SO$0$0                       part2retry
+     000000C1  G$SMB0STA$0$0                      part2retry
+     000000C1  G$SMBFTE$0$0                       part2retry
+     000000C1  _MAC0AL                            part2retry
+     000000C1  _MAC0SO                            part2retry
+     000000C1  _SMB0STA                           part2retry
+     000000C1  _SMBFTE                            part2retry
+     000000C2  G$AA$0$0                           part2retry
+     000000C2  G$MAC0AH$0$0                       part2retry
+     000000C2  G$MAC0Z$0$0                        part2retry
+     000000C2  G$SMB0DAT$0$0                      part2retry
+     000000C2  _AA                                part2retry
+     000000C2  _MAC0AH                            part2retry
+     000000C2  _MAC0Z                             part2retry
+     000000C2  _SMB0DAT                           part2retry
+     000000C3  G$MAC0CF$0$0                       part2retry
+     000000C3  G$MAC0HO$0$0                       part2retry
+     000000C3  G$SI$0$0                           part2retry
+     000000C3  G$SMB0ADR$0$0                      part2retry
+     000000C3  _MAC0CF                            part2retry
+     000000C3  _MAC0HO                            part2retry
+     000000C3  _SI                                part2retry
+     000000C3  _SMB0ADR                           part2retry
+     000000C4  G$ADC0GTL$0$0                      part2retry
+     000000C4  G$ADC2GT$0$0                       part2retry
+     000000C4  G$STO$0$0                          part2retry
+     000000C4  _ADC0GTL                           part2retry
+     000000C4  _ADC2GT                            part2retry
+     000000C4  _STO                               part2retry
+     000000C5  G$ADC0GTH$0$0                      part2retry
+     000000C5  G$STA$0$0                          part2retry
+     000000C5  _ADC0GTH                           part2retry
+     000000C5  _STA                               part2retry
+     000000C6  G$ADC0LTL$0$0                      part2retry
+     000000C6  G$ADC2LT$0$0                       part2retry
+     000000C6  G$ENSMB$0$0                        part2retry
+     000000C6  _ADC0LTL                           part2retry
+     000000C6  _ADC2LT                            part2retry
+     000000C6  _ENSMB                             part2retry
+     000000C7  G$ADC0LTH$0$0                      part2retry
+     000000C7  G$BUSY$0$0                         part2retry
+     000000C7  _ADC0LTH                           part2retry
+     000000C7  _BUSY                              part2retry
+     000000C8  G$CPRL2$0$0                        part2retry
+     000000C8  G$CPRL3$0$0                        part2retry
+     000000C8  G$CPRL4$0$0                        part2retry
+     000000C8  G$P4$0$0                           part2retry
+     000000C8  G$P4_0$0$0                         part2retry
+     000000C8  G$TMR2CN$0$0                       part2retry
+     000000C8  G$TMR3CN$0$0                       part2retry
+     000000C8  G$TMR4CN$0$0                       part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000C8  _CPRL2                             part2retry
+     000000C8  _CPRL3                             part2retry
+     000000C8  _CPRL4                             part2retry
+     000000C8  _P4                                part2retry
+     000000C8  _P4_0                              part2retry
+     000000C8  _TMR2CN                            part2retry
+     000000C8  _TMR3CN                            part2retry
+     000000C8  _TMR4CN                            part2retry
+     000000C9  G$CT2$0$0                          part2retry
+     000000C9  G$CT3$0$0                          part2retry
+     000000C9  G$CT4$0$0                          part2retry
+     000000C9  G$P4_1$0$0                         part2retry
+     000000C9  G$TMR2CF$0$0                       part2retry
+     000000C9  G$TMR3CF$0$0                       part2retry
+     000000C9  G$TMR4CF$0$0                       part2retry
+     000000C9  _CT2                               part2retry
+     000000C9  _CT3                               part2retry
+     000000C9  _CT4                               part2retry
+     000000C9  _P4_1                              part2retry
+     000000C9  _TMR2CF                            part2retry
+     000000C9  _TMR3CF                            part2retry
+     000000C9  _TMR4CF                            part2retry
+     000000CA  G$P4_2$0$0                         part2retry
+     000000CA  G$RCAP2L$0$0                       part2retry
+     000000CA  G$RCAP3L$0$0                       part2retry
+     000000CA  G$RCAP4L$0$0                       part2retry
+     000000CA  G$TR2$0$0                          part2retry
+     000000CA  G$TR3$0$0                          part2retry
+     000000CA  G$TR4$0$0                          part2retry
+     000000CA  _P4_2                              part2retry
+     000000CA  _RCAP2L                            part2retry
+     000000CA  _RCAP3L                            part2retry
+     000000CA  _RCAP4L                            part2retry
+     000000CA  _TR2                               part2retry
+     000000CA  _TR3                               part2retry
+     000000CA  _TR4                               part2retry
+     000000CB  G$EXEN2$0$0                        part2retry
+     000000CB  G$EXEN3$0$0                        part2retry
+     000000CB  G$EXEN4$0$0                        part2retry
+     000000CB  G$P4_3$0$0                         part2retry
+     000000CB  G$RCAP2H$0$0                       part2retry
+     000000CB  G$RCAP3H$0$0                       part2retry
+     000000CB  G$RCAP4H$0$0                       part2retry
+     000000CB  _EXEN2                             part2retry
+     000000CB  _EXEN3                             part2retry
+     000000CB  _EXEN4                             part2retry
+     000000CB  _P4_3                              part2retry
+     000000CB  _RCAP2H                            part2retry
+     000000CB  _RCAP3H                            part2retry
+     000000CB  _RCAP4H                            part2retry
+     000000CC  G$P4_4$0$0                         part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000CC  G$TL2$0$0                          part2retry
+     000000CC  G$TMR2L$0$0                        part2retry
+     000000CC  G$TMR3L$0$0                        part2retry
+     000000CC  G$TMR4L$0$0                        part2retry
+     000000CC  _P4_4                              part2retry
+     000000CC  _TL2                               part2retry
+     000000CC  _TMR2L                             part2retry
+     000000CC  _TMR3L                             part2retry
+     000000CC  _TMR4L                             part2retry
+     000000CD  G$P4_5$0$0                         part2retry
+     000000CD  G$TH2$0$0                          part2retry
+     000000CD  G$TMR2H$0$0                        part2retry
+     000000CD  G$TMR3H$0$0                        part2retry
+     000000CD  G$TMR4H$0$0                        part2retry
+     000000CD  _P4_5                              part2retry
+     000000CD  _TH2                               part2retry
+     000000CD  _TMR2H                             part2retry
+     000000CD  _TMR3H                             part2retry
+     000000CD  _TMR4H                             part2retry
+     000000CE  G$EXF2$0$0                         part2retry
+     000000CE  G$EXF3$0$0                         part2retry
+     000000CE  G$EXF4$0$0                         part2retry
+     000000CE  G$MAC0RNDL$0$0                     part2retry
+     000000CE  G$P4_6$0$0                         part2retry
+     000000CE  _EXF2                              part2retry
+     000000CE  _EXF3                              part2retry
+     000000CE  _EXF4                              part2retry
+     000000CE  _MAC0RNDL                          part2retry
+     000000CE  _P4_6                              part2retry
+     000000CF  G$MAC0RNDH$0$0                     part2retry
+     000000CF  G$P4_7$0$0                         part2retry
+     000000CF  G$SMB0CR$0$0                       part2retry
+     000000CF  G$TF2$0$0                          part2retry
+     000000CF  G$TF3$0$0                          part2retry
+     000000CF  G$TF4$0$0                          part2retry
+     000000CF  _MAC0RNDH                          part2retry
+     000000CF  _P4_7                              part2retry
+     000000CF  _SMB0CR                            part2retry
+     000000CF  _TF2                               part2retry
+     000000CF  _TF3                               part2retry
+     000000CF  _TF4                               part2retry
+     000000D0  G$P$0$0                            part2retry
+     000000D0  G$PSW$0$0                          part2retry
+     000000D0  _P                                 part2retry
+     000000D0  _PSW                               part2retry
+     000000D1  G$F1$0$0                           part2retry
+     000000D1  G$REF0CN$0$0                       part2retry
+     000000D1  _F1                                part2retry
+     000000D1  _REF0CN                            part2retry
+     000000D2  G$DAC0L$0$0                        part2retry
+     000000D2  G$DAC1L$0$0                        part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000D2  G$OV$0$0                           part2retry
+     000000D2  _DAC0L                             part2retry
+     000000D2  _DAC1L                             part2retry
+     000000D2  _OV                                part2retry
+     000000D3  G$DAC0H$0$0                        part2retry
+     000000D3  G$DAC1H$0$0                        part2retry
+     000000D3  G$RS0$0$0                          part2retry
+     000000D3  _DAC0H                             part2retry
+     000000D3  _DAC1H                             part2retry
+     000000D3  _RS0                               part2retry
+     000000D4  G$DAC0CN$0$0                       part2retry
+     000000D4  G$DAC1CN$0$0                       part2retry
+     000000D4  G$RS1$0$0                          part2retry
+     000000D4  _DAC0CN                            part2retry
+     000000D4  _DAC1CN                            part2retry
+     000000D4  _RS1                               part2retry
+     000000D5  G$F0$0$0                           part2retry
+     000000D5  _F0                                part2retry
+     000000D6  G$AC$0$0                           part2retry
+     000000D6  _AC                                part2retry
+     000000D7  G$CY$0$0                           part2retry
+     000000D7  _CY                                part2retry
+     000000D8  G$CCF0$0$0                         part2retry
+     000000D8  G$P5$0$0                           part2retry
+     000000D8  G$P5_0$0$0                         part2retry
+     000000D8  G$PCA0CN$0$0                       part2retry
+     000000D8  _CCF0                              part2retry
+     000000D8  _P5                                part2retry
+     000000D8  _P5_0                              part2retry
+     000000D8  _PCA0CN                            part2retry
+     000000D9  G$CCF1$0$0                         part2retry
+     000000D9  G$P5_1$0$0                         part2retry
+     000000D9  G$PCA0MD$0$0                       part2retry
+     000000D9  _CCF1                              part2retry
+     000000D9  _P5_1                              part2retry
+     000000D9  _PCA0MD                            part2retry
+     000000DA  G$CCF2$0$0                         part2retry
+     000000DA  G$P5_2$0$0                         part2retry
+     000000DA  G$PCA0CPM0$0$0                     part2retry
+     000000DA  _CCF2                              part2retry
+     000000DA  _P5_2                              part2retry
+     000000DA  _PCA0CPM0                          part2retry
+     000000DB  G$CCF3$0$0                         part2retry
+     000000DB  G$P5_3$0$0                         part2retry
+     000000DB  G$PCA0CPM1$0$0                     part2retry
+     000000DB  _CCF3                              part2retry
+     000000DB  _P5_3                              part2retry
+     000000DB  _PCA0CPM1                          part2retry
+     000000DC  G$CCF4$0$0                         part2retry
+     000000DC  G$P5_4$0$0                         part2retry
+     000000DC  G$PCA0CPM2$0$0                     part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000DC  _CCF4                              part2retry
+     000000DC  _P5_4                              part2retry
+     000000DC  _PCA0CPM2                          part2retry
+     000000DD  G$CCF5$0$0                         part2retry
+     000000DD  G$P5_5$0$0                         part2retry
+     000000DD  G$PCA0CPM3$0$0                     part2retry
+     000000DD  _CCF5                              part2retry
+     000000DD  _P5_5                              part2retry
+     000000DD  _PCA0CPM3                          part2retry
+     000000DE  G$CR$0$0                           part2retry
+     000000DE  G$P5_6$0$0                         part2retry
+     000000DE  G$PCA0CPM4$0$0                     part2retry
+     000000DE  _CR                                part2retry
+     000000DE  _P5_6                              part2retry
+     000000DE  _PCA0CPM4                          part2retry
+     000000DF  G$CF$0$0                           part2retry
+     000000DF  G$P5_7$0$0                         part2retry
+     000000DF  G$PCA0CPM5$0$0                     part2retry
+     000000DF  _CF                                part2retry
+     000000DF  _P5_7                              part2retry
+     000000DF  _PCA0CPM5                          part2retry
+     000000E0  G$ACC$0$0                          part2retry
+     000000E0  _ACC                               part2retry
+     000000E1  G$PCA0CPL5$0$0                     part2retry
+     000000E1  G$XBR0$0$0                         part2retry
+     000000E1  _PCA0CPL5                          part2retry
+     000000E1  _XBR0                              part2retry
+     000000E2  G$PCA0CPH5$0$0                     part2retry
+     000000E2  G$XBR1$0$0                         part2retry
+     000000E2  _PCA0CPH5                          part2retry
+     000000E2  _XBR1                              part2retry
+     000000E3  G$XBR2$0$0                         part2retry
+     000000E3  _XBR2                              part2retry
+     000000E6  G$EIE1$0$0                         part2retry
+     000000E6  _EIE1                              part2retry
+     000000E7  G$EIE2$0$0                         part2retry
+     000000E7  _EIE2                              part2retry
+     000000E8  G$AD0LJST$0$0                      part2retry
+     000000E8  G$AD2WINT$0$0                      part2retry
+     000000E8  G$ADC0CN$0$0                       part2retry
+     000000E8  G$ADC2CN$0$0                       part2retry
+     000000E8  G$P6$0$0                           part2retry
+     000000E8  G$P6_0$0$0                         part2retry
+     000000E8  _AD0LJST                           part2retry
+     000000E8  _AD2WINT                           part2retry
+     000000E8  _ADC0CN                            part2retry
+     000000E8  _ADC2CN                            part2retry
+     000000E8  _P6                                part2retry
+     000000E8  _P6_0                              part2retry
+     000000E9  G$AD0WINT$0$0                      part2retry
+     000000E9  G$AD2CM0$0$0                       part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000E9  G$P6_1$0$0                         part2retry
+     000000E9  G$PCA0CPL2$0$0                     part2retry
+     000000E9  _AD0WINT                           part2retry
+     000000E9  _AD2CM0                            part2retry
+     000000E9  _P6_1                              part2retry
+     000000E9  _PCA0CPL2                          part2retry
+     000000EA  G$AD0CM0$0$0                       part2retry
+     000000EA  G$AD2CM1$0$0                       part2retry
+     000000EA  G$P6_2$0$0                         part2retry
+     000000EA  G$PCA0CPH2$0$0                     part2retry
+     000000EA  _AD0CM0                            part2retry
+     000000EA  _AD2CM1                            part2retry
+     000000EA  _P6_2                              part2retry
+     000000EA  _PCA0CPH2                          part2retry
+     000000EB  G$AD0CM1$0$0                       part2retry
+     000000EB  G$AD2CM2$0$0                       part2retry
+     000000EB  G$P6_3$0$0                         part2retry
+     000000EB  G$PCA0CPL3$0$0                     part2retry
+     000000EB  _AD0CM1                            part2retry
+     000000EB  _AD2CM2                            part2retry
+     000000EB  _P6_3                              part2retry
+     000000EB  _PCA0CPL3                          part2retry
+     000000EC  G$AD0BUSY$0$0                      part2retry
+     000000EC  G$AD2BUSY$0$0                      part2retry
+     000000EC  G$P6_4$0$0                         part2retry
+     000000EC  G$PCA0CPH3$0$0                     part2retry
+     000000EC  _AD0BUSY                           part2retry
+     000000EC  _AD2BUSY                           part2retry
+     000000EC  _P6_4                              part2retry
+     000000EC  _PCA0CPH3                          part2retry
+     000000ED  G$AD0INT$0$0                       part2retry
+     000000ED  G$AD2INT$0$0                       part2retry
+     000000ED  G$P6_5$0$0                         part2retry
+     000000ED  G$PCA0CPL4$0$0                     part2retry
+     000000ED  _AD0INT                            part2retry
+     000000ED  _AD2INT                            part2retry
+     000000ED  _P6_5                              part2retry
+     000000ED  _PCA0CPL4                          part2retry
+     000000EE  G$AD0TM$0$0                        part2retry
+     000000EE  G$AD2TM$0$0                        part2retry
+     000000EE  G$P6_6$0$0                         part2retry
+     000000EE  G$PCA0CPH4$0$0                     part2retry
+     000000EE  _AD0TM                             part2retry
+     000000EE  _AD2TM                             part2retry
+     000000EE  _P6_6                              part2retry
+     000000EE  _PCA0CPH4                          part2retry
+     000000EF  G$AD0EN$0$0                        part2retry
+     000000EF  G$AD2EN$0$0                        part2retry
+     000000EF  G$P6_7$0$0                         part2retry
+     000000EF  G$RSTSRC$0$0                       part2retry
+     000000EF  _AD0EN                             part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000EF  _AD2EN                             part2retry
+     000000EF  _P6_7                              part2retry
+     000000EF  _RSTSRC                            part2retry
+     000000F0  G$B$0$0                            part2retry
+     000000F0  _B                                 part2retry
+     000000F5  _B_5                               _gptrget
+     000000F6  G$EIP1$0$0                         part2retry
+     000000F6  _B_6                               _gptrget
+     000000F6  _EIP1                              part2retry
+     000000F7  G$EIP2$0$0                         part2retry
+     000000F7  _B_7                               _gptrget
+     000000F7  _EIP2                              part2retry
+     000000F8  G$P7$0$0                           part2retry
+     000000F8  G$P7_0$0$0                         part2retry
+     000000F8  G$SPI0CN$0$0                       part2retry
+     000000F8  G$SPIEN$0$0                        part2retry
+     000000F8  _P7                                part2retry
+     000000F8  _P7_0                              part2retry
+     000000F8  _SPI0CN                            part2retry
+     000000F8  _SPIEN                             part2retry
+     000000F9  G$P7_1$0$0                         part2retry
+     000000F9  G$PCA0L$0$0                        part2retry
+     000000F9  G$TXBMT$0$0                        part2retry
+     000000F9  _P7_1                              part2retry
+     000000F9  _PCA0L                             part2retry
+     000000F9  _TXBMT                             part2retry
+     000000FA  G$NSSMD0$0$0                       part2retry
+     000000FA  G$P7_2$0$0                         part2retry
+     000000FA  G$PCA0H$0$0                        part2retry
+     000000FA  _NSSMD0                            part2retry
+     000000FA  _P7_2                              part2retry
+     000000FA  _PCA0H                             part2retry
+     000000FB  G$NSSMD1$0$0                       part2retry
+     000000FB  G$P7_3$0$0                         part2retry
+     000000FB  G$PCA0CPL0$0$0                     part2retry
+     000000FB  _NSSMD1                            part2retry
+     000000FB  _P7_3                              part2retry
+     000000FB  _PCA0CPL0                          part2retry
+     000000FC  G$P7_4$0$0                         part2retry
+     000000FC  G$PCA0CPH0$0$0                     part2retry
+     000000FC  G$RXOVRN$0$0                       part2retry
+     000000FC  _P7_4                              part2retry
+     000000FC  _PCA0CPH0                          part2retry
+     000000FC  _RXOVRN                            part2retry
+     000000FD  G$MODF$0$0                         part2retry
+     000000FD  G$P7_5$0$0                         part2retry
+     000000FD  G$PCA0CPL1$0$0                     part2retry
+     000000FD  _MODF                              part2retry
+     000000FD  _P7_5                              part2retry
+     000000FD  _PCA0CPL1                          part2retry
+     000000FE  G$P7_6$0$0                         part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000FE  G$PCA0CPH1$0$0                     part2retry
+     000000FE  G$WCOL$0$0                         part2retry
+     000000FE  _P7_6                              part2retry
+     000000FE  _PCA0CPH1                          part2retry
+     000000FE  _WCOL                              part2retry
+     000000FF  G$P7_7$0$0                         part2retry
+     000000FF  G$SPIF$0$0                         part2retry
+     000000FF  G$WDTCN$0$0                        part2retry
+     000000FF  _P7_7                              part2retry
+     000000FF  _SPIF                              part2retry
+     000000FF  _WDTCN                             part2retry
+     00008C8A  G$TMR0$0$0                         part2retry
+     00008C8A  _TMR0                              part2retry
+     00008D8B  G$TMR1$0$0                         part2retry
+     00008D8B  _TMR1                              part2retry
+     0000BFBE  G$ADC0$0$0                         part2retry
+     0000BFBE  _ADC0                              part2retry
+     0000C2C1  G$MAC0A$0$0                        part2retry
+     0000C2C1  _MAC0A                             part2retry
+     0000C5C4  G$ADC0GT$0$0                       part2retry
+     0000C5C4  _ADC0GT                            part2retry
+     0000C7C6  G$ADC0LT$0$0                       part2retry
+     0000C7C6  _ADC0LT                            part2retry
+     0000CBCA  G$RCAP2$0$0                        part2retry
+     0000CBCA  G$RCAP3$0$0                        part2retry
+     0000CBCA  G$RCAP4$0$0                        part2retry
+     0000CBCA  _RCAP2                             part2retry
+     0000CBCA  _RCAP3                             part2retry
+     0000CBCA  _RCAP4                             part2retry
+     0000CDCC  G$TMR2$0$0                         part2retry
+     0000CDCC  G$TMR3$0$0                         part2retry
+     0000CDCC  G$TMR4$0$0                         part2retry
+     0000CDCC  _TMR2                              part2retry
+     0000CDCC  _TMR3                              part2retry
+     0000CDCC  _TMR4                              part2retry
+     0000CFCE  G$MAC0RND$0$0                      part2retry
+     0000CFCE  _MAC0RND                           part2retry
+     0000D3D2  G$DAC0$0$0                         part2retry
+     0000D3D2  G$DAC1$0$0                         part2retry
+     0000D3D2  _DAC0                              part2retry
+     0000D3D2  _DAC1                              part2retry
+     0000E2E1  G$PCA0CP5$0$0                      part2retry
+     0000E2E1  _PCA0CP5                           part2retry
+     0000EAE9  G$PCA0CP2$0$0                      part2retry
+     0000EAE9  _PCA0CP2                           part2retry
+     0000ECEB  G$PCA0CP3$0$0                      part2retry
+     0000ECEB  _PCA0CP3                           part2retry
+     0000EEED  G$PCA0CP4$0$0                      part2retry
+     0000EEED  _PCA0CP4                           part2retry
+     0000FAF9  G$PCA0$0$0                         part2retry
+     0000FAF9  _PCA0                              part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000FCFB  G$PCA0CP0$0$0                      part2retry
+     0000FCFB  _PCA0CP0                           part2retry
+     0000FEFD  G$PCA0CP1$0$0                      part2retry
+     0000FEFD  _PCA0CP1                           part2retry
+     00959493  G$MAC0ACC$0$0                      part2retry
+     00959493  _MAC0ACC                           part2retry
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+BSEG_BYTES                          00000020    00000002 =           2. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+BIT_BANK                            00000022    00000001 =           1. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000076 =         118. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000008  _vprintf_PARM_2                    vprintf
+     00000009  _bp                                _bp
+     00000023  G$vH$0$0                           part2retry
+     00000023  _vH                                part2retry
+     00000026  G$vL$0$0                           part2retry
+     00000026  _vL                                part2retry
+     00000029  G$voltage$0$0                      part2retry
+     00000029  _voltage                           part2retry
+     0000002B  G$previousVoltage$0$0              part2retry
+     0000002B  _previousVoltage                   part2retry
+     0000002D  G$average$0$0                      part2retry
+     0000002D  _average                           part2retry
+     00000031  G$max$0$0                          part2retry
+     00000031  _max                               part2retry
+     00000033  G$min$0$0                          part2retry
+     00000033  _min                               part2retry
+     00000035  G$TR0_count$0$0                    part2retry
+     00000035  _TR0_count                         part2retry
+     00000037  G$sampleCount$0$0                  part2retry
+     00000037  _sampleCount                       part2retry
+     00000039  G$frequency$0$0                    part2retry
+     00000039  _frequency                         part2retry
+     0000003B  Lpart2retry.loop$vActual$1$36      part2retry
+     0000004B  __print_format_PARM_2              printf_large
+     0000004E  __print_format_PARM_3              printf_large
+     00000051  __print_format_PARM_4              printf_large
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+OSEG                                0000000A    00000006 =           6. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000000A  __divsint_PARM_2                   _divuint
+     0000000A  __divslong_PARM_2                  _divulong
+     0000000A  __divuint_PARM_2                   _divuint
+     0000000A  __divulong_PARM_2                  _divulong
+     0000000A  __gptrput_PARM_2                   _gptrput
+     0000000A  __mullong_PARM_2                   _mullong
+ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+ISEG                                00000010    00000006 =           6. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000059    000000A7 =         167. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000059  __start__stack                     part2retry
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    00000081 =         129. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  A$part2retry$1306                  part2retry
+C:   00000003  A$part2retry$1307                  part2retry
+C:   0000000B  A$part2retry$1309                  part2retry
+C:   00000013  A$part2retry$1311                  part2retry
+C:   0000001B  A$part2retry$1313                  part2retry
+C:   00000023  A$part2retry$1315                  part2retry
+C:   0000002B  A$part2retry$1317                  part2retry
+C:   00000033  A$part2retry$1319                  part2retry
+C:   0000003B  A$part2retry$1321                  part2retry
+C:   00000043  A$part2retry$1323                  part2retry
+C:   0000004B  A$part2retry$1325                  part2retry
+C:   00000053  A$part2retry$1327                  part2retry
+C:   0000005B  A$part2retry$1329                  part2retry
+C:   00000063  A$part2retry$1331                  part2retry
+C:   0000006B  A$part2retry$1333                  part2retry
+C:   00000073  A$part2retry$1335                  part2retry
+C:   0000007B  A$part2retry$1337                  part2retry
+C:   0000007E  A$part2retry$1372                  part2retry
+C:   0000007E  __sdcc_program_startup             part2retry
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00000081    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000081  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00000084    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             0000008E    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000008E  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             000000B0    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000B0  __mcs51_genRAMCLEAR                
+C:   000000B6  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              000000DA    0000000D =          13. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000DA  A$part2retry$1353                  part2retry
+C:   000000DA  C$part2retry.c$33$1$54             part2retry
+C:   000000DB  A$part2retry$1354                  part2retry
+C:   000000DD  A$part2retry$1355                  part2retry
+C:   000000DF  A$part2retry$1358                  part2retry
+C:   000000DF  C$part2retry.c$34$1$54             part2retry
+C:   000000E1  A$part2retry$1359                  part2retry
+C:   000000E3  A$part2retry$1362                  part2retry
+C:   000000E3  C$part2retry.c$35$1$54             part2retry
+C:   000000E5  A$part2retry$1363                  part2retry
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             000000E7    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000E7  A$part2retry$1365                  part2retry
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000EA  A$part2retry$1398                  part2retry
+C:   000000EA  C$putget.h$18$0$0                  part2retry
+C:   000000EA  G$putchar$0$0                      part2retry
+C:   000000EA  _putchar                           part2retry
+C:   000000EC  A$part2retry$1404                  part2retry
+C:   000000EC  C$putget.h$20$1$21                 part2retry
+C:   000000EC  C$putget.h$21$1$21                 part2retry
+C:   000000EF  A$part2retry$1405                  part2retry
+C:   000000F1  A$part2retry$1409                  part2retry
+C:   000000F1  C$putget.h$22$1$21                 part2retry
+C:   000000F3  A$part2retry$1412                  part2retry
+C:   000000F3  C$putget.h$23$1$21                 part2retry
+C:   000000F3  XG$putchar$0$0                     part2retry
+C:   000000F4  A$part2retry$1430                  part2retry
+C:   000000F4  C$putget.h$28$1$21                 part2retry
+C:   000000F4  C$putget.h$31$1$23                 part2retry
+C:   000000F4  C$putget.h$32$1$23                 part2retry
+C:   000000F4  G$getchar$0$0                      part2retry
+C:   000000F4  _getchar                           part2retry
+C:   000000F7  A$part2retry$1431                  part2retry
+C:   000000F9  A$part2retry$1435                  part2retry
+C:   000000F9  C$putget.h$33$1$23                 part2retry
+C:   000000FC  A$part2retry$1438                  part2retry
+C:   000000FC  C$putget.h$35$1$23                 part2retry
+C:   000000FF  A$part2retry$1441                  part2retry
+C:   000000FF  C$putget.h$36$1$23                 part2retry
+C:   00000102  A$part2retry$1444                  part2retry
+C:   00000102  C$putget.h$37$1$23                 part2retry
+C:   00000102  XG$getchar$0$0                     part2retry
+C:   00000103  A$part2retry$1457                  part2retry
+C:   00000103  C$part2retry.c$40$1$23             part2retry
+C:   00000103  C$part2retry.c$44$1$33             part2retry
+C:   00000103  G$main$0$0                         part2retry
+C:   00000103  _main                              part2retry
+C:   00000106  A$part2retry$1460                  part2retry
+C:   00000106  C$part2retry.c$46$1$33             part2retry
+C:   00000109  A$part2retry$1463                  part2retry
+C:   00000109  C$part2retry.c$47$1$33             part2retry
+C:   0000010C  A$part2retry$1466                  part2retry
+C:   0000010C  C$part2retry.c$48$1$33             part2retry
+C:   0000010F  A$part2retry$1469                  part2retry
+C:   0000010F  C$part2retry.c$49$1$33             part2retry
+C:   00000112  A$part2retry$1472                  part2retry
+C:   00000112  C$part2retry.c$51$1$33             part2retry
+C:   00000115  A$part2retry$1475                  part2retry
+C:   00000115  C$part2retry.c$52$1$33             part2retry
+C:   00000117  A$part2retry$1478                  part2retry
+C:   00000117  C$part2retry.c$54$1$33             part2retry
+C:   0000011A  A$part2retry$1481                  part2retry
+C:   0000011A  C$part2retry.c$57$1$33             part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000011C  A$part2retry$1482                  part2retry
+C:   0000011E  A$part2retry$1483                  part2retry
+C:   00000120  A$part2retry$1484                  part2retry
+C:   00000122  A$part2retry$1485                  part2retry
+C:   00000124  A$part2retry$1486                  part2retry
+C:   00000126  A$part2retry$1487                  part2retry
+C:   00000129  A$part2retry$1488                  part2retry
+C:   0000012B  A$part2retry$1489                  part2retry
+C:   0000012D  A$part2retry$1490                  part2retry
+C:   0000012F  A$part2retry$1493                  part2retry
+C:   0000012F  C$part2retry.c$58$1$33             part2retry
+C:   00000131  A$part2retry$1494                  part2retry
+C:   00000133  A$part2retry$1495                  part2retry
+C:   00000135  A$part2retry$1496                  part2retry
+C:   00000137  A$part2retry$1497                  part2retry
+C:   00000139  A$part2retry$1498                  part2retry
+C:   0000013B  A$part2retry$1499                  part2retry
+C:   0000013E  A$part2retry$1500                  part2retry
+C:   00000140  A$part2retry$1501                  part2retry
+C:   00000142  A$part2retry$1502                  part2retry
+C:   00000144  A$part2retry$1505                  part2retry
+C:   00000144  C$part2retry.c$60$1$33             part2retry
+C:   00000147  A$part2retry$1506                  part2retry
+C:   0000014A  A$part2retry$1507                  part2retry
+C:   0000014D  A$part2retry$1510                  part2retry
+C:   0000014D  C$part2retry.c$61$1$33             part2retry
+C:   0000014F  A$part2retry$1511                  part2retry
+C:   00000151  A$part2retry$1512                  part2retry
+C:   00000153  A$part2retry$1513                  part2retry
+C:   00000154  A$part2retry$1514                  part2retry
+C:   00000156  A$part2retry$1515                  part2retry
+C:   00000158  A$part2retry$1516                  part2retry
+C:   0000015B  A$part2retry$1519                  part2retry
+C:   0000015B  C$part2retry.c$63$1$33             part2retry
+C:   0000015C  A$part2retry$1520                  part2retry
+C:   0000015E  A$part2retry$1521                  part2retry
+C:   00000160  A$part2retry$1524                  part2retry
+C:   00000160  C$part2retry.c$65$1$33             part2retry
+C:   00000162  A$part2retry$1525                  part2retry
+C:   00000164  A$part2retry$1526                  part2retry
+C:   00000166  A$part2retry$1527                  part2retry
+C:   00000168  A$part2retry$1530                  part2retry
+C:   00000168  C$part2retry.c$67$1$33             part2retry
+C:   0000016A  A$part2retry$1536                  part2retry
+C:   0000016A  C$part2retry.c$69$1$33             part2retry
+C:   0000016A  C$part2retry.c$71$2$34             part2retry
+C:   0000016D  A$part2retry$1537                  part2retry
+C:   0000016F  A$part2retry$1538                  part2retry
+C:   00000171  A$part2retry$1541                  part2retry
+C:   00000171  C$part2retry.c$74$1$33             part2retry
+C:   00000171  XG$main$0$0                        part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000172  A$part2retry$1557                  part2retry
+C:   00000172  C$part2retry.c$76$1$33             part2retry
+C:   00000172  C$part2retry.c$80$1$36             part2retry
+C:   00000172  G$loop$0$0                         part2retry
+C:   00000172  _loop                              part2retry
+C:   00000175  A$part2retry$1560                  part2retry
+C:   00000175  C$part2retry.c$82$1$36             part2retry
+C:   00000178  A$part2retry$1563                  part2retry
+C:   00000178  C$part2retry.c$83$2$37             part2retry
+C:   0000017A  A$part2retry$1566                  part2retry
+C:   0000017A  C$part2retry.c$84$2$37             part2retry
+C:   0000017C  A$part2retry$1570                  part2retry
+C:   0000017C  C$part2retry.c$86$1$36             part2retry
+C:   0000017E  A$part2retry$1571                  part2retry
+C:   00000180  A$part2retry$1572                  part2retry
+C:   00000182  A$part2retry$1573                  part2retry
+C:   00000184  A$part2retry$1574                  part2retry
+C:   00000186  A$part2retry$1575                  part2retry
+C:   00000188  A$part2retry$1576                  part2retry
+C:   0000018A  A$part2retry$1577                  part2retry
+C:   0000018C  A$part2retry$1578                  part2retry
+C:   0000018F  A$part2retry$1579                  part2retry
+C:   00000191  A$part2retry$1580                  part2retry
+C:   00000193  A$part2retry$1581                  part2retry
+C:   00000195  A$part2retry$1584                  part2retry
+C:   00000195  C$part2retry.c$88$1$36             part2retry
+C:   00000196  A$part2retry$1585                  part2retry
+C:   00000198  A$part2retry$1586                  part2retry
+C:   0000019A  A$part2retry$1587                  part2retry
+C:   0000019C  A$part2retry$1588                  part2retry
+C:   0000019F  A$part2retry$1589                  part2retry
+C:   000001A2  A$part2retry$1590                  part2retry
+C:   000001A4  A$part2retry$1591                  part2retry
+C:   000001A6  A$part2retry$1592                  part2retry
+C:   000001A7  A$part2retry$1593                  part2retry
+C:   000001A9  A$part2retry$1594                  part2retry
+C:   000001AB  A$part2retry$1595                  part2retry
+C:   000001AD  A$part2retry$1596                  part2retry
+C:   000001AF  A$part2retry$1599                  part2retry
+C:   000001AF  C$part2retry.c$89$1$36             part2retry
+C:   000001B2  A$part2retry$1600                  part2retry
+C:   000001B5  A$part2retry$1601                  part2retry
+C:   000001B8  A$part2retry$1602                  part2retry
+C:   000001BB  A$part2retry$1603                  part2retry
+C:   000001BE  A$part2retry$1604                  part2retry
+C:   000001C1  A$part2retry$1607                  part2retry
+C:   000001C1  C$part2retry.c$90$2$38             part2retry
+C:   000001C2  A$part2retry$1608                  part2retry
+C:   000001C4  A$part2retry$1609                  part2retry
+C:   000001C6  A$part2retry$1613                  part2retry
+C:   000001C6  C$part2retry.c$92$1$36             part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000001C9  A$part2retry$1614                  part2retry
+C:   000001CC  A$part2retry$1617                  part2retry
+C:   000001CC  C$part2retry.c$94$1$36             part2retry
+C:   000001CD  A$part2retry$1618                  part2retry
+C:   000001CF  A$part2retry$1619                  part2retry
+C:   000001D1  A$part2retry$1620                  part2retry
+C:   000001D3  A$part2retry$1621                  part2retry
+C:   000001D5  A$part2retry$1622                  part2retry
+C:   000001D7  A$part2retry$1623                  part2retry
+C:   000001DA  A$part2retry$1627                  part2retry
+C:   000001DA  C$part2retry.c$96$2$39             part2retry
+C:   000001DB  A$part2retry$1628                  part2retry
+C:   000001DD  A$part2retry$1629                  part2retry
+C:   000001DF  A$part2retry$1633                  part2retry
+C:   000001DF  C$part2retry.c$98$2$39             part2retry
+C:   000001E1  A$part2retry$1636                  part2retry
+C:   000001E1  C$part2retry.c$103$2$39            part2retry
+C:   000001E3  A$part2retry$1637                  part2retry
+C:   000001E5  A$part2retry$1638                  part2retry
+C:   000001E7  A$part2retry$1639                  part2retry
+C:   000001E9  A$part2retry$1640                  part2retry
+C:   000001EB  A$part2retry$1641                  part2retry
+C:   000001ED  A$part2retry$1642                  part2retry
+C:   000001F0  A$part2retry$1643                  part2retry
+C:   000001F2  A$part2retry$1644                  part2retry
+C:   000001F4  A$part2retry$1645                  part2retry
+C:   000001F6  A$part2retry$1648                  part2retry
+C:   000001F6  C$part2retry.c$105$1$36            part2retry
+C:   000001F9  A$part2retry$1649                  part2retry
+C:   000001FC  A$part2retry$1650                  part2retry
+C:   000001FF  A$part2retry$1651                  part2retry
+C:   00000201  A$part2retry$1652                  part2retry
+C:   00000203  A$part2retry$1653                  part2retry
+C:   00000205  A$part2retry$1654                  part2retry
+C:   00000206  A$part2retry$1655                  part2retry
+C:   00000208  A$part2retry$1656                  part2retry
+C:   0000020A  A$part2retry$1657                  part2retry
+C:   0000020C  A$part2retry$1658                  part2retry
+C:   0000020E  A$part2retry$1659                  part2retry
+C:   00000211  A$part2retry$1660                  part2retry
+C:   00000213  A$part2retry$1661                  part2retry
+C:   00000215  A$part2retry$1662                  part2retry
+C:   00000218  A$part2retry$1663                  part2retry
+C:   0000021A  A$part2retry$1664                  part2retry
+C:   0000021C  A$part2retry$1665                  part2retry
+C:   0000021E  A$part2retry$1666                  part2retry
+C:   0000021F  A$part2retry$1667                  part2retry
+C:   00000221  A$part2retry$1668                  part2retry
+C:   00000223  A$part2retry$1669                  part2retry
+C:   00000225  A$part2retry$1670                  part2retry
+C:   00000226  A$part2retry$1671                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 37.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000228  A$part2retry$1672                  part2retry
+C:   0000022A  A$part2retry$1673                  part2retry
+C:   0000022C  A$part2retry$1674                  part2retry
+C:   0000022E  A$part2retry$1675                  part2retry
+C:   00000230  A$part2retry$1676                  part2retry
+C:   00000232  A$part2retry$1677                  part2retry
+C:   00000234  A$part2retry$1678                  part2retry
+C:   00000236  A$part2retry$1679                  part2retry
+C:   00000238  A$part2retry$1680                  part2retry
+C:   0000023A  A$part2retry$1681                  part2retry
+C:   0000023B  A$part2retry$1682                  part2retry
+C:   0000023E  A$part2retry$1683                  part2retry
+C:   00000241  A$part2retry$1684                  part2retry
+C:   00000244  A$part2retry$1685                  part2retry
+C:   00000247  A$part2retry$1686                  part2retry
+C:   00000249  A$part2retry$1687                  part2retry
+C:   0000024B  A$part2retry$1688                  part2retry
+C:   0000024D  A$part2retry$1689                  part2retry
+C:   0000024F  A$part2retry$1692                  part2retry
+C:   0000024F  C$part2retry.c$106$1$36            part2retry
+C:   00000252  A$part2retry$1693                  part2retry
+C:   00000255  A$part2retry$1694                  part2retry
+C:   00000258  A$part2retry$1695                  part2retry
+C:   0000025A  A$part2retry$1696                  part2retry
+C:   0000025D  A$part2retry$1697                  part2retry
+C:   0000025F  A$part2retry$1698                  part2retry
+C:   00000261  A$part2retry$1699                  part2retry
+C:   00000263  A$part2retry$1700                  part2retry
+C:   00000265  A$part2retry$1701                  part2retry
+C:   00000267  A$part2retry$1702                  part2retry
+C:   00000269  A$part2retry$1703                  part2retry
+C:   0000026B  A$part2retry$1704                  part2retry
+C:   0000026D  A$part2retry$1705                  part2retry
+C:   0000026F  A$part2retry$1706                  part2retry
+C:   00000271  A$part2retry$1707                  part2retry
+C:   00000274  A$part2retry$1708                  part2retry
+C:   00000276  A$part2retry$1709                  part2retry
+C:   00000278  A$part2retry$1710                  part2retry
+C:   0000027A  A$part2retry$1713                  part2retry
+C:   0000027A  C$part2retry.c$107$1$36            part2retry
+C:   0000027B  A$part2retry$1714                  part2retry
+C:   0000027D  A$part2retry$1715                  part2retry
+C:   0000027F  A$part2retry$1716                  part2retry
+C:   00000281  A$part2retry$1717                  part2retry
+C:   00000283  A$part2retry$1718                  part2retry
+C:   00000286  A$part2retry$1719                  part2retry
+C:   00000289  A$part2retry$1720                  part2retry
+C:   0000028C  A$part2retry$1721                  part2retry
+C:   0000028E  A$part2retry$1722                  part2retry
+C:   00000291  A$part2retry$1723                  part2retry
+C:   00000293  A$part2retry$1724                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 38.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000295  A$part2retry$1725                  part2retry
+C:   00000297  A$part2retry$1726                  part2retry
+C:   00000299  A$part2retry$1727                  part2retry
+C:   0000029A  A$part2retry$1728                  part2retry
+C:   0000029C  A$part2retry$1729                  part2retry
+C:   0000029E  A$part2retry$1730                  part2retry
+C:   000002A0  A$part2retry$1731                  part2retry
+C:   000002A2  A$part2retry$1735                  part2retry
+C:   000002A4  A$part2retry$1736                  part2retry
+C:   000002A6  A$part2retry$1740                  part2retry
+C:   000002A6  C$part2retry.c$109$1$36            part2retry
+C:   000002A9  A$part2retry$1741                  part2retry
+C:   000002AC  A$part2retry$1742                  part2retry
+C:   000002AF  A$part2retry$1743                  part2retry
+C:   000002B1  A$part2retry$1744                  part2retry
+C:   000002B3  A$part2retry$1745                  part2retry
+C:   000002B6  A$part2retry$1746                  part2retry
+C:   000002B9  A$part2retry$1747                  part2retry
+C:   000002BB  A$part2retry$1748                  part2retry
+C:   000002BD  A$part2retry$1749                  part2retry
+C:   000002BF  A$part2retry$1750                  part2retry
+C:   000002C0  A$part2retry$1751                  part2retry
+C:   000002C2  A$part2retry$1752                  part2retry
+C:   000002C4  A$part2retry$1753                  part2retry
+C:   000002C6  A$part2retry$1754                  part2retry
+C:   000002C8  A$part2retry$1755                  part2retry
+C:   000002CB  A$part2retry$1756                  part2retry
+C:   000002CE  A$part2retry$1757                  part2retry
+C:   000002D1  A$part2retry$1758                  part2retry
+C:   000002D3  A$part2retry$1759                  part2retry
+C:   000002D6  A$part2retry$1760                  part2retry
+C:   000002D8  A$part2retry$1761                  part2retry
+C:   000002DA  A$part2retry$1762                  part2retry
+C:   000002DC  A$part2retry$1763                  part2retry
+C:   000002DD  A$part2retry$1764                  part2retry
+C:   000002DF  A$part2retry$1765                  part2retry
+C:   000002E1  A$part2retry$1766                  part2retry
+C:   000002E3  A$part2retry$1767                  part2retry
+C:   000002E5  A$part2retry$1768                  part2retry
+C:   000002E7  A$part2retry$1769                  part2retry
+C:   000002E9  A$part2retry$1770                  part2retry
+C:   000002EB  A$part2retry$1771                  part2retry
+C:   000002EE  A$part2retry$1772                  part2retry
+C:   000002F1  A$part2retry$1773                  part2retry
+C:   000002F3  A$part2retry$1774                  part2retry
+C:   000002F6  A$part2retry$1775                  part2retry
+C:   000002F9  A$part2retry$1776                  part2retry
+C:   000002FC  A$part2retry$1777                  part2retry
+C:   000002FF  A$part2retry$1778                  part2retry
+C:   00000301  A$part2retry$1779                  part2retry
+C:   00000303  A$part2retry$1780                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 39.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000305  A$part2retry$1781                  part2retry
+C:   00000307  A$part2retry$1784                  part2retry
+C:   00000307  C$part2retry.c$110$1$36            part2retry
+C:   0000030A  A$part2retry$1785                  part2retry
+C:   0000030D  A$part2retry$1786                  part2retry
+C:   00000310  A$part2retry$1787                  part2retry
+C:   00000312  A$part2retry$1788                  part2retry
+C:   00000315  A$part2retry$1789                  part2retry
+C:   00000317  A$part2retry$1790                  part2retry
+C:   00000319  A$part2retry$1791                  part2retry
+C:   0000031B  A$part2retry$1792                  part2retry
+C:   0000031D  A$part2retry$1793                  part2retry
+C:   0000031F  A$part2retry$1794                  part2retry
+C:   00000321  A$part2retry$1795                  part2retry
+C:   00000323  A$part2retry$1796                  part2retry
+C:   00000325  A$part2retry$1797                  part2retry
+C:   00000327  A$part2retry$1798                  part2retry
+C:   00000329  A$part2retry$1799                  part2retry
+C:   0000032C  A$part2retry$1800                  part2retry
+C:   0000032E  A$part2retry$1801                  part2retry
+C:   00000330  A$part2retry$1802                  part2retry
+C:   00000332  A$part2retry$1803                  part2retry
+C:   00000334  A$part2retry$1806                  part2retry
+C:   00000334  C$part2retry.c$108$2$39            part2retry
+C:   00000335  A$part2retry$1807                  part2retry
+C:   00000338  A$part2retry$1809                  part2retry
+C:   0000033A  A$part2retry$1810                  part2retry
+C:   0000033D  A$part2retry$1814                  part2retry
+C:   0000033D  C$part2retry.c$113$2$39            part2retry
+C:   0000033F  A$part2retry$1815                  part2retry
+C:   00000341  A$part2retry$1816                  part2retry
+C:   00000343  A$part2retry$1817                  part2retry
+C:   00000345  A$part2retry$1818                  part2retry
+C:   00000347  A$part2retry$1819                  part2retry
+C:   00000349  A$part2retry$1820                  part2retry
+C:   0000034C  A$part2retry$1821                  part2retry
+C:   0000034E  A$part2retry$1822                  part2retry
+C:   00000350  A$part2retry$1823                  part2retry
+C:   00000352  A$part2retry$1826                  part2retry
+C:   00000352  C$part2retry.c$115$1$36            part2retry
+C:   00000355  A$part2retry$1827                  part2retry
+C:   00000358  A$part2retry$1828                  part2retry
+C:   0000035B  A$part2retry$1829                  part2retry
+C:   0000035D  A$part2retry$1830                  part2retry
+C:   0000035F  A$part2retry$1831                  part2retry
+C:   00000361  A$part2retry$1832                  part2retry
+C:   00000362  A$part2retry$1833                  part2retry
+C:   00000364  A$part2retry$1834                  part2retry
+C:   00000366  A$part2retry$1835                  part2retry
+C:   00000368  A$part2retry$1836                  part2retry
+C:   0000036A  A$part2retry$1837                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 40.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000036D  A$part2retry$1838                  part2retry
+C:   0000036F  A$part2retry$1839                  part2retry
+C:   00000371  A$part2retry$1840                  part2retry
+C:   00000374  A$part2retry$1841                  part2retry
+C:   00000376  A$part2retry$1842                  part2retry
+C:   00000378  A$part2retry$1843                  part2retry
+C:   0000037A  A$part2retry$1844                  part2retry
+C:   0000037B  A$part2retry$1845                  part2retry
+C:   0000037D  A$part2retry$1846                  part2retry
+C:   0000037F  A$part2retry$1847                  part2retry
+C:   00000381  A$part2retry$1848                  part2retry
+C:   00000382  A$part2retry$1849                  part2retry
+C:   00000384  A$part2retry$1850                  part2retry
+C:   00000386  A$part2retry$1851                  part2retry
+C:   00000388  A$part2retry$1852                  part2retry
+C:   0000038A  A$part2retry$1853                  part2retry
+C:   0000038C  A$part2retry$1854                  part2retry
+C:   0000038E  A$part2retry$1855                  part2retry
+C:   00000390  A$part2retry$1856                  part2retry
+C:   00000392  A$part2retry$1857                  part2retry
+C:   00000394  A$part2retry$1858                  part2retry
+C:   00000396  A$part2retry$1859                  part2retry
+C:   00000397  A$part2retry$1860                  part2retry
+C:   0000039A  A$part2retry$1861                  part2retry
+C:   0000039D  A$part2retry$1862                  part2retry
+C:   000003A0  A$part2retry$1863                  part2retry
+C:   000003A3  A$part2retry$1864                  part2retry
+C:   000003A5  A$part2retry$1865                  part2retry
+C:   000003A7  A$part2retry$1866                  part2retry
+C:   000003A9  A$part2retry$1867                  part2retry
+C:   000003AB  A$part2retry$1870                  part2retry
+C:   000003AB  C$part2retry.c$116$1$36            part2retry
+C:   000003AE  A$part2retry$1871                  part2retry
+C:   000003B1  A$part2retry$1872                  part2retry
+C:   000003B4  A$part2retry$1873                  part2retry
+C:   000003B6  A$part2retry$1874                  part2retry
+C:   000003B9  A$part2retry$1875                  part2retry
+C:   000003BB  A$part2retry$1876                  part2retry
+C:   000003BD  A$part2retry$1877                  part2retry
+C:   000003BF  A$part2retry$1878                  part2retry
+C:   000003C1  A$part2retry$1879                  part2retry
+C:   000003C3  A$part2retry$1880                  part2retry
+C:   000003C5  A$part2retry$1881                  part2retry
+C:   000003C7  A$part2retry$1882                  part2retry
+C:   000003C9  A$part2retry$1883                  part2retry
+C:   000003CB  A$part2retry$1884                  part2retry
+C:   000003CD  A$part2retry$1885                  part2retry
+C:   000003D0  A$part2retry$1886                  part2retry
+C:   000003D2  A$part2retry$1887                  part2retry
+C:   000003D4  A$part2retry$1888                  part2retry
+C:   000003D6  A$part2retry$1891                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 41.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000003D6  C$part2retry.c$117$1$36            part2retry
+C:   000003D7  A$part2retry$1892                  part2retry
+C:   000003D9  A$part2retry$1893                  part2retry
+C:   000003DB  A$part2retry$1894                  part2retry
+C:   000003DD  A$part2retry$1895                  part2retry
+C:   000003DF  A$part2retry$1896                  part2retry
+C:   000003E2  A$part2retry$1897                  part2retry
+C:   000003E5  A$part2retry$1898                  part2retry
+C:   000003E8  A$part2retry$1899                  part2retry
+C:   000003EA  A$part2retry$1900                  part2retry
+C:   000003ED  A$part2retry$1901                  part2retry
+C:   000003EF  A$part2retry$1902                  part2retry
+C:   000003F1  A$part2retry$1903                  part2retry
+C:   000003F3  A$part2retry$1904                  part2retry
+C:   000003F5  A$part2retry$1905                  part2retry
+C:   000003F6  A$part2retry$1906                  part2retry
+C:   000003F8  A$part2retry$1907                  part2retry
+C:   000003FA  A$part2retry$1908                  part2retry
+C:   000003FC  A$part2retry$1909                  part2retry
+C:   000003FE  A$part2retry$1913                  part2retry
+C:   00000400  A$part2retry$1914                  part2retry
+C:   00000402  A$part2retry$1918                  part2retry
+C:   00000402  C$part2retry.c$119$1$36            part2retry
+C:   00000405  A$part2retry$1919                  part2retry
+C:   00000408  A$part2retry$1920                  part2retry
+C:   0000040B  A$part2retry$1921                  part2retry
+C:   0000040D  A$part2retry$1922                  part2retry
+C:   0000040F  A$part2retry$1923                  part2retry
+C:   00000412  A$part2retry$1924                  part2retry
+C:   00000415  A$part2retry$1925                  part2retry
+C:   00000417  A$part2retry$1926                  part2retry
+C:   00000419  A$part2retry$1927                  part2retry
+C:   0000041B  A$part2retry$1928                  part2retry
+C:   0000041C  A$part2retry$1929                  part2retry
+C:   0000041E  A$part2retry$1930                  part2retry
+C:   00000420  A$part2retry$1931                  part2retry
+C:   00000422  A$part2retry$1932                  part2retry
+C:   00000424  A$part2retry$1933                  part2retry
+C:   00000427  A$part2retry$1934                  part2retry
+C:   0000042A  A$part2retry$1935                  part2retry
+C:   0000042D  A$part2retry$1936                  part2retry
+C:   0000042F  A$part2retry$1937                  part2retry
+C:   00000432  A$part2retry$1938                  part2retry
+C:   00000434  A$part2retry$1939                  part2retry
+C:   00000436  A$part2retry$1940                  part2retry
+C:   00000438  A$part2retry$1941                  part2retry
+C:   00000439  A$part2retry$1942                  part2retry
+C:   0000043B  A$part2retry$1943                  part2retry
+C:   0000043D  A$part2retry$1944                  part2retry
+C:   0000043F  A$part2retry$1945                  part2retry
+C:   00000441  A$part2retry$1946                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 42.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000443  A$part2retry$1947                  part2retry
+C:   00000445  A$part2retry$1948                  part2retry
+C:   00000447  A$part2retry$1949                  part2retry
+C:   0000044A  A$part2retry$1950                  part2retry
+C:   0000044D  A$part2retry$1951                  part2retry
+C:   0000044F  A$part2retry$1952                  part2retry
+C:   00000452  A$part2retry$1953                  part2retry
+C:   00000455  A$part2retry$1954                  part2retry
+C:   00000458  A$part2retry$1955                  part2retry
+C:   0000045B  A$part2retry$1956                  part2retry
+C:   0000045D  A$part2retry$1957                  part2retry
+C:   0000045F  A$part2retry$1958                  part2retry
+C:   00000461  A$part2retry$1959                  part2retry
+C:   00000463  A$part2retry$1962                  part2retry
+C:   00000463  C$part2retry.c$120$1$36            part2retry
+C:   00000466  A$part2retry$1963                  part2retry
+C:   00000469  A$part2retry$1964                  part2retry
+C:   0000046C  A$part2retry$1965                  part2retry
+C:   0000046E  A$part2retry$1966                  part2retry
+C:   00000471  A$part2retry$1967                  part2retry
+C:   00000473  A$part2retry$1968                  part2retry
+C:   00000475  A$part2retry$1969                  part2retry
+C:   00000477  A$part2retry$1970                  part2retry
+C:   00000479  A$part2retry$1971                  part2retry
+C:   0000047B  A$part2retry$1972                  part2retry
+C:   0000047D  A$part2retry$1973                  part2retry
+C:   0000047F  A$part2retry$1974                  part2retry
+C:   00000481  A$part2retry$1975                  part2retry
+C:   00000483  A$part2retry$1976                  part2retry
+C:   00000485  A$part2retry$1977                  part2retry
+C:   00000488  A$part2retry$1978                  part2retry
+C:   0000048A  A$part2retry$1979                  part2retry
+C:   0000048C  A$part2retry$1980                  part2retry
+C:   0000048E  A$part2retry$1981                  part2retry
+C:   00000490  A$part2retry$1984                  part2retry
+C:   00000490  C$part2retry.c$118$2$39            part2retry
+C:   00000491  A$part2retry$1985                  part2retry
+C:   00000494  A$part2retry$1987                  part2retry
+C:   00000496  A$part2retry$1988                  part2retry
+C:   00000499  A$part2retry$1992                  part2retry
+C:   00000499  C$part2retry.c$123$2$39            part2retry
+C:   0000049B  A$part2retry$1993                  part2retry
+C:   0000049D  A$part2retry$1994                  part2retry
+C:   0000049F  A$part2retry$1995                  part2retry
+C:   000004A1  A$part2retry$1996                  part2retry
+C:   000004A3  A$part2retry$1997                  part2retry
+C:   000004A5  A$part2retry$1998                  part2retry
+C:   000004A8  A$part2retry$1999                  part2retry
+C:   000004AA  A$part2retry$2000                  part2retry
+C:   000004AC  A$part2retry$2001                  part2retry
+C:   000004AE  A$part2retry$2004                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 43.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000004AE  C$part2retry.c$125$1$36            part2retry
+C:   000004B1  A$part2retry$2005                  part2retry
+C:   000004B4  A$part2retry$2006                  part2retry
+C:   000004B7  A$part2retry$2007                  part2retry
+C:   000004B9  A$part2retry$2008                  part2retry
+C:   000004BC  A$part2retry$2009                  part2retry
+C:   000004BE  A$part2retry$2010                  part2retry
+C:   000004C0  A$part2retry$2011                  part2retry
+C:   000004C2  A$part2retry$2012                  part2retry
+C:   000004C3  A$part2retry$2013                  part2retry
+C:   000004C5  A$part2retry$2014                  part2retry
+C:   000004C7  A$part2retry$2015                  part2retry
+C:   000004C9  A$part2retry$2016                  part2retry
+C:   000004CB  A$part2retry$2017                  part2retry
+C:   000004CE  A$part2retry$2018                  part2retry
+C:   000004D0  A$part2retry$2019                  part2retry
+C:   000004D2  A$part2retry$2020                  part2retry
+C:   000004D5  A$part2retry$2021                  part2retry
+C:   000004D7  A$part2retry$2022                  part2retry
+C:   000004D9  A$part2retry$2023                  part2retry
+C:   000004DB  A$part2retry$2024                  part2retry
+C:   000004DC  A$part2retry$2025                  part2retry
+C:   000004DE  A$part2retry$2026                  part2retry
+C:   000004E0  A$part2retry$2027                  part2retry
+C:   000004E2  A$part2retry$2028                  part2retry
+C:   000004E3  A$part2retry$2029                  part2retry
+C:   000004E5  A$part2retry$2030                  part2retry
+C:   000004E7  A$part2retry$2031                  part2retry
+C:   000004E9  A$part2retry$2032                  part2retry
+C:   000004EB  A$part2retry$2033                  part2retry
+C:   000004ED  A$part2retry$2034                  part2retry
+C:   000004EF  A$part2retry$2035                  part2retry
+C:   000004F1  A$part2retry$2036                  part2retry
+C:   000004F3  A$part2retry$2037                  part2retry
+C:   000004F5  A$part2retry$2038                  part2retry
+C:   000004F7  A$part2retry$2039                  part2retry
+C:   000004F8  A$part2retry$2040                  part2retry
+C:   000004FB  A$part2retry$2041                  part2retry
+C:   000004FE  A$part2retry$2042                  part2retry
+C:   00000501  A$part2retry$2043                  part2retry
+C:   00000504  A$part2retry$2044                  part2retry
+C:   00000506  A$part2retry$2045                  part2retry
+C:   00000508  A$part2retry$2046                  part2retry
+C:   0000050A  A$part2retry$2047                  part2retry
+C:   0000050C  A$part2retry$2050                  part2retry
+C:   0000050C  C$part2retry.c$126$1$36            part2retry
+C:   0000050F  A$part2retry$2051                  part2retry
+C:   00000512  A$part2retry$2052                  part2retry
+C:   00000515  A$part2retry$2053                  part2retry
+C:   00000517  A$part2retry$2054                  part2retry
+C:   0000051A  A$part2retry$2055                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 44.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000051C  A$part2retry$2056                  part2retry
+C:   0000051E  A$part2retry$2057                  part2retry
+C:   00000520  A$part2retry$2058                  part2retry
+C:   00000522  A$part2retry$2059                  part2retry
+C:   00000524  A$part2retry$2060                  part2retry
+C:   00000526  A$part2retry$2061                  part2retry
+C:   00000528  A$part2retry$2062                  part2retry
+C:   0000052A  A$part2retry$2063                  part2retry
+C:   0000052C  A$part2retry$2064                  part2retry
+C:   0000052E  A$part2retry$2065                  part2retry
+C:   00000531  A$part2retry$2066                  part2retry
+C:   00000533  A$part2retry$2067                  part2retry
+C:   00000535  A$part2retry$2068                  part2retry
+C:   00000537  A$part2retry$2071                  part2retry
+C:   00000537  C$part2retry.c$127$1$36            part2retry
+C:   00000538  A$part2retry$2072                  part2retry
+C:   0000053A  A$part2retry$2073                  part2retry
+C:   0000053C  A$part2retry$2074                  part2retry
+C:   0000053E  A$part2retry$2075                  part2retry
+C:   00000540  A$part2retry$2076                  part2retry
+C:   00000543  A$part2retry$2077                  part2retry
+C:   00000546  A$part2retry$2078                  part2retry
+C:   00000549  A$part2retry$2079                  part2retry
+C:   0000054B  A$part2retry$2080                  part2retry
+C:   0000054E  A$part2retry$2081                  part2retry
+C:   00000550  A$part2retry$2082                  part2retry
+C:   00000552  A$part2retry$2083                  part2retry
+C:   00000554  A$part2retry$2084                  part2retry
+C:   00000556  A$part2retry$2085                  part2retry
+C:   00000557  A$part2retry$2086                  part2retry
+C:   00000559  A$part2retry$2087                  part2retry
+C:   0000055B  A$part2retry$2088                  part2retry
+C:   0000055D  A$part2retry$2089                  part2retry
+C:   0000055F  A$part2retry$2093                  part2retry
+C:   00000561  A$part2retry$2097                  part2retry
+C:   00000561  C$part2retry.c$129$1$36            part2retry
+C:   00000564  A$part2retry$2098                  part2retry
+C:   00000567  A$part2retry$2099                  part2retry
+C:   0000056A  A$part2retry$2100                  part2retry
+C:   0000056C  A$part2retry$2101                  part2retry
+C:   0000056E  A$part2retry$2102                  part2retry
+C:   00000571  A$part2retry$2103                  part2retry
+C:   00000574  A$part2retry$2104                  part2retry
+C:   00000576  A$part2retry$2105                  part2retry
+C:   00000578  A$part2retry$2106                  part2retry
+C:   0000057A  A$part2retry$2107                  part2retry
+C:   0000057B  A$part2retry$2108                  part2retry
+C:   0000057D  A$part2retry$2109                  part2retry
+C:   0000057F  A$part2retry$2110                  part2retry
+C:   00000581  A$part2retry$2111                  part2retry
+C:   00000583  A$part2retry$2112                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 45.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000586  A$part2retry$2113                  part2retry
+C:   00000589  A$part2retry$2114                  part2retry
+C:   0000058C  A$part2retry$2115                  part2retry
+C:   0000058E  A$part2retry$2116                  part2retry
+C:   00000591  A$part2retry$2117                  part2retry
+C:   00000593  A$part2retry$2118                  part2retry
+C:   00000595  A$part2retry$2119                  part2retry
+C:   00000597  A$part2retry$2120                  part2retry
+C:   00000598  A$part2retry$2121                  part2retry
+C:   0000059A  A$part2retry$2122                  part2retry
+C:   0000059C  A$part2retry$2123                  part2retry
+C:   0000059E  A$part2retry$2124                  part2retry
+C:   000005A0  A$part2retry$2125                  part2retry
+C:   000005A2  A$part2retry$2126                  part2retry
+C:   000005A4  A$part2retry$2127                  part2retry
+C:   000005A6  A$part2retry$2128                  part2retry
+C:   000005A9  A$part2retry$2129                  part2retry
+C:   000005AC  A$part2retry$2130                  part2retry
+C:   000005AE  A$part2retry$2131                  part2retry
+C:   000005B1  A$part2retry$2132                  part2retry
+C:   000005B4  A$part2retry$2133                  part2retry
+C:   000005B7  A$part2retry$2134                  part2retry
+C:   000005BA  A$part2retry$2135                  part2retry
+C:   000005BC  A$part2retry$2136                  part2retry
+C:   000005BE  A$part2retry$2137                  part2retry
+C:   000005C0  A$part2retry$2138                  part2retry
+C:   000005C2  A$part2retry$2141                  part2retry
+C:   000005C2  C$part2retry.c$130$1$36            part2retry
+C:   000005C5  A$part2retry$2142                  part2retry
+C:   000005C8  A$part2retry$2143                  part2retry
+C:   000005CB  A$part2retry$2144                  part2retry
+C:   000005CD  A$part2retry$2145                  part2retry
+C:   000005D0  A$part2retry$2146                  part2retry
+C:   000005D2  A$part2retry$2147                  part2retry
+C:   000005D4  A$part2retry$2148                  part2retry
+C:   000005D6  A$part2retry$2149                  part2retry
+C:   000005D8  A$part2retry$2150                  part2retry
+C:   000005DA  A$part2retry$2151                  part2retry
+C:   000005DC  A$part2retry$2152                  part2retry
+C:   000005DE  A$part2retry$2153                  part2retry
+C:   000005E0  A$part2retry$2154                  part2retry
+C:   000005E2  A$part2retry$2155                  part2retry
+C:   000005E4  A$part2retry$2156                  part2retry
+C:   000005E7  A$part2retry$2157                  part2retry
+C:   000005E9  A$part2retry$2158                  part2retry
+C:   000005EB  A$part2retry$2159                  part2retry
+C:   000005ED  A$part2retry$2160                  part2retry
+C:   000005EF  A$part2retry$2163                  part2retry
+C:   000005EF  C$part2retry.c$128$2$39            part2retry
+C:   000005F0  A$part2retry$2164                  part2retry
+C:   000005F3  A$part2retry$2166                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 46.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000005F5  A$part2retry$2167                  part2retry
+C:   000005F8  A$part2retry$2171                  part2retry
+C:   000005F8  C$part2retry.c$133$2$39            part2retry
+C:   000005FA  A$part2retry$2172                  part2retry
+C:   000005FC  A$part2retry$2173                  part2retry
+C:   000005FE  A$part2retry$2174                  part2retry
+C:   00000600  A$part2retry$2175                  part2retry
+C:   00000602  A$part2retry$2176                  part2retry
+C:   00000604  A$part2retry$2177                  part2retry
+C:   00000606  A$part2retry$2178                  part2retry
+C:   00000608  A$part2retry$2179                  part2retry
+C:   0000060B  A$part2retry$2180                  part2retry
+C:   0000060D  A$part2retry$2181                  part2retry
+C:   0000060F  A$part2retry$2182                  part2retry
+C:   00000611  A$part2retry$2186                  part2retry
+C:   00000611  C$part2retry.c$137$1$36            part2retry
+C:   00000614  A$part2retry$2189                  part2retry
+C:   00000614  C$part2retry.c$138$1$36            part2retry
+C:   00000614  XG$loop$0$0                        part2retry
+C:   00000615  A$part2retry$2200                  part2retry
+C:   00000615  C$part2retry.c$140$1$36            part2retry
+C:   00000615  G$ADC_ISR$0$0                      part2retry
+C:   00000615  _ADC_ISR                           part2retry
+C:   00000617  A$part2retry$2201                  part2retry
+C:   00000619  A$part2retry$2202                  part2retry
+C:   0000061B  A$part2retry$2203                  part2retry
+C:   0000061D  A$part2retry$2204                  part2retry
+C:   0000061F  A$part2retry$2205                  part2retry
+C:   00000621  A$part2retry$2206                  part2retry
+C:   00000623  A$part2retry$2207                  part2retry
+C:   00000625  A$part2retry$2208                  part2retry
+C:   00000627  A$part2retry$2209                  part2retry
+C:   00000629  A$part2retry$2210                  part2retry
+C:   0000062B  A$part2retry$2211                  part2retry
+C:   0000062D  A$part2retry$2212                  part2retry
+C:   0000062F  A$part2retry$2213                  part2retry
+C:   00000631  A$part2retry$2214                  part2retry
+C:   00000634  A$part2retry$2217                  part2retry
+C:   00000634  C$part2retry.c$141$1$44            part2retry
+C:   00000637  A$part2retry$2220                  part2retry
+C:   00000637  C$part2retry.c$143$1$44            part2retry
+C:   00000639  A$part2retry$2221                  part2retry
+C:   0000063B  A$part2retry$2222                  part2retry
+C:   0000063D  A$part2retry$2223                  part2retry
+C:   0000063F  A$part2retry$2224                  part2retry
+C:   00000641  A$part2retry$2225                  part2retry
+C:   00000643  A$part2retry$2226                  part2retry
+C:   00000645  A$part2retry$2227                  part2retry
+C:   00000648  A$part2retry$2230                  part2retry
+C:   00000648  C$part2retry.c$144$1$44            part2retry
+C:   0000064A  A$part2retry$2231                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 47.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000064C  A$part2retry$2232                  part2retry
+C:   0000064E  A$part2retry$2233                  part2retry
+C:   00000650  A$part2retry$2234                  part2retry
+C:   00000652  A$part2retry$2235                  part2retry
+C:   00000654  A$part2retry$2236                  part2retry
+C:   00000656  A$part2retry$2237                  part2retry
+C:   00000659  A$part2retry$2240                  part2retry
+C:   00000659  C$part2retry.c$146$1$44            part2retry
+C:   0000065A  A$part2retry$2241                  part2retry
+C:   0000065C  A$part2retry$2242                  part2retry
+C:   0000065E  A$part2retry$2243                  part2retry
+C:   00000660  A$part2retry$2244                  part2retry
+C:   00000662  A$part2retry$2245                  part2retry
+C:   00000665  A$part2retry$2246                  part2retry
+C:   00000668  A$part2retry$2247                  part2retry
+C:   0000066A  A$part2retry$2248                  part2retry
+C:   0000066C  A$part2retry$2249                  part2retry
+C:   0000066F  A$part2retry$2250                  part2retry
+C:   00000672  A$part2retry$2254                  part2retry
+C:   00000672  C$part2retry.c$147$1$44            part2retry
+C:   00000673  A$part2retry$2255                  part2retry
+C:   00000675  A$part2retry$2256                  part2retry
+C:   00000677  A$part2retry$2257                  part2retry
+C:   00000679  A$part2retry$2258                  part2retry
+C:   0000067B  A$part2retry$2259                  part2retry
+C:   0000067E  A$part2retry$2260                  part2retry
+C:   00000681  A$part2retry$2261                  part2retry
+C:   00000683  A$part2retry$2262                  part2retry
+C:   00000685  A$part2retry$2263                  part2retry
+C:   00000688  A$part2retry$2264                  part2retry
+C:   0000068B  A$part2retry$2268                  part2retry
+C:   0000068B  C$part2retry.c$149$1$44            part2retry
+C:   0000068D  A$part2retry$2271                  part2retry
+C:   0000068D  C$part2retry.c$151$1$44            part2retry
+C:   00000690  A$part2retry$2272                  part2retry
+C:   00000693  A$part2retry$2273                  part2retry
+C:   00000696  A$part2retry$2274                  part2retry
+C:   00000699  A$part2retry$2275                  part2retry
+C:   0000069C  A$part2retry$2276                  part2retry
+C:   0000069D  A$part2retry$2277                  part2retry
+C:   0000069F  A$part2retry$2278                  part2retry
+C:   000006A2  A$part2retry$2279                  part2retry
+C:   000006A4  A$part2retry$2280                  part2retry
+C:   000006A6  A$part2retry$2281                  part2retry
+C:   000006A8  A$part2retry$2282                  part2retry
+C:   000006A9  A$part2retry$2283                  part2retry
+C:   000006AB  A$part2retry$2284                  part2retry
+C:   000006AD  A$part2retry$2285                  part2retry
+C:   000006AE  A$part2retry$2286                  part2retry
+C:   000006AF  A$part2retry$2287                  part2retry
+C:   000006B1  A$part2retry$2288                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 48.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000006B2  A$part2retry$2289                  part2retry
+C:   000006B3  A$part2retry$2290                  part2retry
+C:   000006B4  A$part2retry$2291                  part2retry
+C:   000006B5  A$part2retry$2292                  part2retry
+C:   000006B6  A$part2retry$2293                  part2retry
+C:   000006B7  A$part2retry$2294                  part2retry
+C:   000006B8  A$part2retry$2295                  part2retry
+C:   000006B9  A$part2retry$2296                  part2retry
+C:   000006BA  A$part2retry$2297                  part2retry
+C:   000006BB  A$part2retry$2298                  part2retry
+C:   000006BC  A$part2retry$2299                  part2retry
+C:   000006BD  A$part2retry$2300                  part2retry
+C:   000006BE  A$part2retry$2301                  part2retry
+C:   000006BF  A$part2retry$2302                  part2retry
+C:   000006C2  A$part2retry$2303                  part2retry
+C:   000006C3  A$part2retry$2304                  part2retry
+C:   000006C5  A$part2retry$2305                  part2retry
+C:   000006C7  A$part2retry$2306                  part2retry
+C:   000006C9  A$part2retry$2307                  part2retry
+C:   000006CB  A$part2retry$2308                  part2retry
+C:   000006CD  A$part2retry$2309                  part2retry
+C:   000006CF  A$part2retry$2310                  part2retry
+C:   000006D0  A$part2retry$2311                  part2retry
+C:   000006D3  A$part2retry$2312                  part2retry
+C:   000006D6  A$part2retry$2313                  part2retry
+C:   000006D9  A$part2retry$2314                  part2retry
+C:   000006DC  A$part2retry$2315                  part2retry
+C:   000006DE  A$part2retry$2316                  part2retry
+C:   000006E0  A$part2retry$2317                  part2retry
+C:   000006E2  A$part2retry$2318                  part2retry
+C:   000006E4  A$part2retry$2319                  part2retry
+C:   000006E6  A$part2retry$2320                  part2retry
+C:   000006E8  A$part2retry$2321                  part2retry
+C:   000006EA  A$part2retry$2322                  part2retry
+C:   000006EC  A$part2retry$2323                  part2retry
+C:   000006EE  A$part2retry$2324                  part2retry
+C:   000006F0  A$part2retry$2325                  part2retry
+C:   000006F2  A$part2retry$2326                  part2retry
+C:   000006F4  A$part2retry$2327                  part2retry
+C:   000006F6  A$part2retry$2328                  part2retry
+C:   000006F8  A$part2retry$2329                  part2retry
+C:   000006FA  A$part2retry$2332                  part2retry
+C:   000006FA  C$part2retry.c$152$1$44            part2retry
+C:   000006FA  XG$ADC_ISR$0$0                     part2retry
+C:   000006FB  A$part2retry$2343                  part2retry
+C:   000006FB  C$part2retry.c$154$1$44            part2retry
+C:   000006FB  G$TR0_ISR$0$0                      part2retry
+C:   000006FB  _TR0_ISR                           part2retry
+C:   000006FD  A$part2retry$2344                  part2retry
+C:   000006FF  A$part2retry$2347                  part2retry
+C:   000006FF  C$part2retry.c$155$1$46            part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 49.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000701  A$part2retry$2348                  part2retry
+C:   00000702  A$part2retry$2349                  part2retry
+C:   00000705  A$part2retry$2350                  part2retry
+C:   00000707  A$part2retry$2354                  part2retry
+C:   00000707  C$part2retry.c$156$1$46            part2retry
+C:   0000070A  A$part2retry$2357                  part2retry
+C:   0000070A  C$part2retry.c$157$1$46            part2retry
+C:   0000070D  A$part2retry$2360                  part2retry
+C:   0000070D  C$part2retry.c$159$1$46            part2retry
+C:   0000070F  A$part2retry$2361                  part2retry
+C:   00000710  A$part2retry$2362                  part2retry
+C:   00000713  A$part2retry$2363                  part2retry
+C:   00000715  A$part2retry$2365                  part2retry
+C:   00000717  A$part2retry$2366                  part2retry
+C:   00000719  A$part2retry$2369                  part2retry
+C:   00000719  C$part2retry.c$160$1$46            part2retry
+C:   00000719  XG$TR0_ISR$0$0                     part2retry
+C:   0000071A  A$part2retry$2388                  part2retry
+C:   0000071A  C$part2retry.c$169$1$46            part2retry
+C:   0000071A  C$part2retry.c$173$1$48            part2retry
+C:   0000071A  G$PORT_INIT$0$0                    part2retry
+C:   0000071A  _PORT_INIT                         part2retry
+C:   0000071C  A$part2retry$2391                  part2retry
+C:   0000071C  C$part2retry.c$175$1$48            part2retry
+C:   0000071F  A$part2retry$2394                  part2retry
+C:   0000071F  C$part2retry.c$176$1$48            part2retry
+C:   00000722  A$part2retry$2397                  part2retry
+C:   00000722  C$part2retry.c$177$1$48            part2retry
+C:   00000725  A$part2retry$2400                  part2retry
+C:   00000725  C$part2retry.c$178$1$48            part2retry
+C:   00000727  A$part2retry$2403                  part2retry
+C:   00000727  C$part2retry.c$180$1$48            part2retry
+C:   0000072A  A$part2retry$2406                  part2retry
+C:   0000072A  C$part2retry.c$181$1$48            part2retry
+C:   0000072D  A$part2retry$2409                  part2retry
+C:   0000072D  C$part2retry.c$182$1$48            part2retry
+C:   00000730  A$part2retry$2412                  part2retry
+C:   00000730  C$part2retry.c$184$1$48            part2retry
+C:   00000733  A$part2retry$2415                  part2retry
+C:   00000733  C$part2retry.c$185$1$48            part2retry
+C:   00000736  A$part2retry$2418                  part2retry
+C:   00000736  C$part2retry.c$187$1$48            part2retry
+C:   00000739  A$part2retry$2421                  part2retry
+C:   00000739  C$part2retry.c$188$1$48            part2retry
+C:   0000073C  A$part2retry$2424                  part2retry
+C:   0000073C  C$part2retry.c$190$1$48            part2retry
+C:   0000073E  A$part2retry$2427                  part2retry
+C:   0000073E  C$part2retry.c$191$1$48            part2retry
+C:   0000073E  XG$PORT_INIT$0$0                   part2retry
+C:   0000073F  A$part2retry$2443                  part2retry
+C:   0000073F  C$part2retry.c$199$1$48            part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 50.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000073F  C$part2retry.c$205$1$50            part2retry
+C:   0000073F  G$SYSCLK_INIT$0$0                  part2retry
+C:   0000073F  _SYSCLK_INIT                       part2retry
+C:   00000741  A$part2retry$2446                  part2retry
+C:   00000741  C$part2retry.c$207$1$50            part2retry
+C:   00000744  A$part2retry$2449                  part2retry
+C:   00000744  C$part2retry.c$208$1$50            part2retry
+C:   00000747  A$part2retry$2452                  part2retry
+C:   00000747  C$part2retry.c$209$1$50            part2retry
+C:   00000749  A$part2retry$2453                  part2retry
+C:   0000074B  A$part2retry$2455                  part2retry
+C:   0000074C  A$part2retry$2456                  part2retry
+C:   0000074F  A$part2retry$2457                  part2retry
+C:   00000750  A$part2retry$2459                  part2retry
+C:   00000751  A$part2retry$2460                  part2retry
+C:   00000752  A$part2retry$2461                  part2retry
+C:   00000754  A$part2retry$2465                  part2retry
+C:   00000754  C$part2retry.c$210$1$50            part2retry
+C:   00000756  A$part2retry$2466                  part2retry
+C:   00000759  A$part2retry$2469                  part2retry
+C:   00000759  C$part2retry.c$211$1$50            part2retry
+C:   0000075C  A$part2retry$2472                  part2retry
+C:   0000075C  C$part2retry.c$212$1$50            part2retry
+C:   0000075F  A$part2retry$2475                  part2retry
+C:   0000075F  C$part2retry.c$214$1$50            part2retry
+C:   00000762  A$part2retry$2478                  part2retry
+C:   00000762  C$part2retry.c$215$1$50            part2retry
+C:   00000765  A$part2retry$2481                  part2retry
+C:   00000765  C$part2retry.c$216$1$50            part2retry
+C:   00000768  A$part2retry$2484                  part2retry
+C:   00000768  C$part2retry.c$217$1$50            part2retry
+C:   0000076B  A$part2retry$2487                  part2retry
+C:   0000076B  C$part2retry.c$218$1$50            part2retry
+C:   0000076E  A$part2retry$2490                  part2retry
+C:   0000076E  C$part2retry.c$219$1$50            part2retry
+C:   00000771  A$part2retry$2493                  part2retry
+C:   00000771  C$part2retry.c$220$1$50            part2retry
+C:   00000774  A$part2retry$2496                  part2retry
+C:   00000774  C$part2retry.c$221$1$50            part2retry
+C:   00000777  A$part2retry$2499                  part2retry
+C:   00000777  C$part2retry.c$222$1$50            part2retry
+C:   0000077A  A$part2retry$2502                  part2retry
+C:   0000077A  C$part2retry.c$223$1$50            part2retry
+C:   0000077C  A$part2retry$2503                  part2retry
+C:   0000077E  A$part2retry$2505                  part2retry
+C:   0000077F  A$part2retry$2506                  part2retry
+C:   00000782  A$part2retry$2507                  part2retry
+C:   00000783  A$part2retry$2509                  part2retry
+C:   00000784  A$part2retry$2510                  part2retry
+C:   00000785  A$part2retry$2511                  part2retry
+C:   00000787  A$part2retry$2514                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 51.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000787  C$part2retry.c$224$1$50            part2retry
+C:   0000078A  A$part2retry$2518                  part2retry
+C:   0000078A  C$part2retry.c$225$1$50            part2retry
+C:   0000078C  A$part2retry$2519                  part2retry
+C:   0000078F  A$part2retry$2522                  part2retry
+C:   0000078F  C$part2retry.c$226$1$50            part2retry
+C:   00000792  A$part2retry$2525                  part2retry
+C:   00000792  C$part2retry.c$228$1$50            part2retry
+C:   00000794  A$part2retry$2528                  part2retry
+C:   00000794  C$part2retry.c$229$1$50            part2retry
+C:   00000797  A$part2retry$2531                  part2retry
+C:   00000797  C$part2retry.c$231$1$50            part2retry
+C:   0000079A  A$part2retry$2534                  part2retry
+C:   0000079A  C$part2retry.c$232$1$50            part2retry
+C:   0000079D  A$part2retry$2537                  part2retry
+C:   0000079D  C$part2retry.c$233$1$50            part2retry
+C:   000007A0  A$part2retry$2540                  part2retry
+C:   000007A0  C$part2retry.c$235$1$50            part2retry
+C:   000007A3  A$part2retry$2543                  part2retry
+C:   000007A3  C$part2retry.c$236$1$50            part2retry
+C:   000007A6  A$part2retry$2546                  part2retry
+C:   000007A6  C$part2retry.c$238$1$50            part2retry
+C:   000007A8  A$part2retry$2549                  part2retry
+C:   000007A8  C$part2retry.c$239$1$50            part2retry
+C:   000007A8  XG$SYSCLK_INIT$0$0                 part2retry
+C:   000007A9  A$part2retry$2564                  part2retry
+C:   000007A9  C$part2retry.c$248$1$50            part2retry
+C:   000007A9  C$part2retry.c$252$1$52            part2retry
+C:   000007A9  G$UART0_INIT$0$0                   part2retry
+C:   000007A9  _UART0_INIT                        part2retry
+C:   000007AB  A$part2retry$2567                  part2retry
+C:   000007AB  C$part2retry.c$254$1$52            part2retry
+C:   000007AE  A$part2retry$2570                  part2retry
+C:   000007AE  C$part2retry.c$255$1$52            part2retry
+C:   000007B1  A$part2retry$2573                  part2retry
+C:   000007B1  C$part2retry.c$256$1$52            part2retry
+C:   000007B4  A$part2retry$2576                  part2retry
+C:   000007B4  C$part2retry.c$257$1$52            part2retry
+C:   000007B7  A$part2retry$2579                  part2retry
+C:   000007B7  C$part2retry.c$258$1$52            part2retry
+C:   000007BA  A$part2retry$2582                  part2retry
+C:   000007BA  C$part2retry.c$259$1$52            part2retry
+C:   000007BD  A$part2retry$2585                  part2retry
+C:   000007BD  C$part2retry.c$260$1$52            part2retry
+C:   000007BF  A$part2retry$2588                  part2retry
+C:   000007BF  C$part2retry.c$262$1$52            part2retry
+C:   000007C2  A$part2retry$2591                  part2retry
+C:   000007C2  C$part2retry.c$263$1$52            part2retry
+C:   000007C5  A$part2retry$2594                  part2retry
+C:   000007C5  C$part2retry.c$264$1$52            part2retry
+C:   000007C8  A$part2retry$2597                  part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 52.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000007C8  C$part2retry.c$265$1$52            part2retry
+C:   000007CA  A$part2retry$2600                  part2retry
+C:   000007CA  C$part2retry.c$267$1$52            part2retry
+C:   000007CC  A$part2retry$2603                  part2retry
+C:   000007CC  C$part2retry.c$268$1$52            part2retry
+C:   000007CC  XG$UART0_INIT$0$0                  part2retry
+C:   000007CD  A$part2retry$2618                  part2retry
+C:   000007CD  C$part2retry.c$270$1$52            part2retry
+C:   000007CD  C$part2retry.c$274$1$54            part2retry
+C:   000007CD  G$ADC_INIT$0$0                     part2retry
+C:   000007CD  _ADC_INIT                          part2retry
+C:   000007CF  A$part2retry$2621                  part2retry
+C:   000007CF  C$part2retry.c$276$1$54            part2retry
+C:   000007D2  A$part2retry$2624                  part2retry
+C:   000007D2  C$part2retry.c$279$1$54            part2retry
+C:   000007D5  A$part2retry$2627                  part2retry
+C:   000007D5  C$part2retry.c$280$1$54            part2retry
+C:   000007D8  A$part2retry$2630                  part2retry
+C:   000007D8  C$part2retry.c$283$1$54            part2retry
+C:   000007DB  A$part2retry$2633                  part2retry
+C:   000007DB  C$part2retry.c$284$1$54            part2retry
+C:   000007DE  A$part2retry$2636                  part2retry
+C:   000007DE  C$part2retry.c$287$1$54            part2retry
+C:   000007E0  A$part2retry$2639                  part2retry
+C:   000007E0  C$part2retry.c$288$1$54            part2retry
+C:   000007E3  A$part2retry$2642                  part2retry
+C:   000007E3  C$part2retry.c$291$1$54            part2retry
+C:   000007E5  A$part2retry$2645                  part2retry
+C:   000007E5  C$part2retry.c$293$1$54            part2retry
+C:   000007E8  A$part2retry$2646                  part2retry
+C:   000007EB  A$part2retry$2649                  part2retry
+C:   000007EB  C$part2retry.c$295$1$54            part2retry
+C:   000007EE  A$part2retry$2652                  part2retry
+C:   000007EE  C$part2retry.c$297$1$54            part2retry
+C:   000007F0  A$part2retry$2655                  part2retry
+C:   000007F0  C$part2retry.c$298$1$54            part2retry
+C:   000007F0  XG$ADC_INIT$0$0                    part2retry
+C:   000007F1  ___fssub                           _fssub
+C:   000007FC  __divuint                          _divuint
+C:   00000825  ___fsmul                           _fsmul
+C:   000008C8  __divulong                         _divulong
+C:   0000092D  fsgetargs                          _fsget2args
+C:   0000095B  fs_normalize_a                     _fsnormalize
+C:   0000098E  ___slong2fs                        _slong2fs
+C:   00000997  slong2fs_doit                      _slong2fs
+C:   000009BB  __gptrput                          _gptrput
+C:   000009D6  ___fslt                            _fslt
+C:   00000A06  __mullong                          _mullong
+C:   00000A06  __mullong_dummy                    _mullong
+C:   00000A74  ___fsadd                           _fsadd
+C:   00000A77  fsadd_direct_entry                 _fsadd
+ASxxxx Linker V03.00 + NoICE + sdld,  page 53.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                000000EA    000012DA =        4826. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000ACD  fs_compare_uint32                  _fscmp
+C:   00000AEB  fs_check_negative_zeros            _fscmp
+C:   00000B16  __divslong                         _divslong
+C:   00000B68  ___sint2fs                         _sint2fs
+C:   00000B75  ___fs2sint                         _fs2sint
+C:   00000BA9  fs_round_and_return                _fsreturnval
+C:   00000BC1  fs_zerocheck_return                _fsreturnval
+C:   00000BCA  fs_return_zero                     _fsreturnval
+C:   00000BD2  fs_direct_return                   _fsreturnval
+C:   00000BE0  fs_return_inf                      _fsreturnval
+C:   00000BED  fs_return_nan                      _fsreturnval
+C:   00000C03  _vprintf                           vprintf
+C:   00000C1C  _printf                            vprintf
+C:   00000CF3  __print_format                     printf_large
+C:   000011FF  fs_swap_a_b                        _fsswapargs
+C:   00001219  _strlen                            _strlen
+C:   00001231  ___fsdiv                           _fsdiv
+C:   000012F4  __gptrget                          _gptrget
+C:   00001310  fs_rshift_a                        _fsrshift
+C:   00001353  ___fs2slong                        _fs2slong
+C:   000013AE  __sdcc_external_startup            _startup
+C:   000013B2  fsgetarg                           _fsget1arg
+ASxxxx Linker V03.00 + NoICE + sdld,  page 54.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CONST                               000013C4    00000072 =         114. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000013C4  Fpart2retry$__str_0$0$0            part2retry
+C:   000013CC  Fpart2retry$__str_1$0$0            part2retry
+C:   000013DF  Fpart2retry$__str_2$0$0            part2retry
+C:   000013EE  Fpart2retry$__str_3$0$0            part2retry
+C:   000013FB  Fpart2retry$__str_4$0$0            part2retry
+C:   000013FE  Fpart2retry$__str_5$0$0            part2retry
+C:   00001401  Fpart2retry$__str_6$0$0            part2retry
+C:   0000140E  Fpart2retry$__str_7$0$0            part2retry
+C:   0000141B  Fpart2retry$__str_8$0$0            part2retry
+ASxxxx Linker V03.00 + NoICE + sdld,  page 55.
+
+Files Linked                              [ module(s) ]
+
+C:\Users\William\Dropbox\Microprocessor Systems\Lab 4\New folder\part2retry.rel
+                                          [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fssub.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libint.lib
+                                          [ _divuint.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsmul.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _divulong.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsget2args.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsnormalize.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _slong2fs.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _gptrput.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fslt.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _mullong.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsadd.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fscmp.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _divslong.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _sint2fs.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fs2sint.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsreturnval.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ vprintf.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ printf_large.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsswapargs.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _strlen.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsdiv.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _gptrget.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsrshift.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fs2slong.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _startup.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libfloat.lib
+                                          [ _fsget1arg.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _bp.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 56.
+
+User Base Address Definitions
+
+HOME = 0x0000
+XSEG = 0x0001
+PSEG = 0x0001
+ISEG = 0x0000
+BSEG = 0x0000
+
+
