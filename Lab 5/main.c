@@ -1,0 +1,269 @@
+#include <c8051f120.h>          // SFR declarations.
+#include <stdio.h>              // Necessary for printf.
+#include "putget.h"             // Necessary for printf
+//-------------------------------------------------------------------------------------------
+// Global CONSTANTS
+//-------------------------------------------------------------------------------------------
+#define EXTCLK      22118400    // External oscillator frequency in Hz
+#define SYSCLK      49766400    // Output of PLL derived from (EXTCLK * 9/4)
+#define BAUDRATE    115200      // UART baud rate in bps
+//#define BAUDRATE  19200       // UART baud rate in bps
+
+//-------------------------------------------------------------------------------------------
+// Function PROTOTYPES
+//-------------------------------------------------------------------------------------------
+void main(void);
+void PORT_INIT(void);
+void SYSCLK_INIT(void);
+void UART0_INIT(void);
+void MEM_INIT(void);
+
+//void ADC_ISR(void) __interrupt 15;
+
+char loop(void);
+
+unsigned char count = 0;
+
+//-------------------------------------------------------------------------------------------
+// MAIN Routine
+//-------------------------------------------------------------------------------------------
+void main (void)
+{
+    __bit restart = 0;
+	char i;
+
+    SFRPAGE = CONFIG_PAGE;
+
+    PORT_INIT();                // Configure the Crossbar and GPIO.
+    SYSCLK_INIT();              // Initialize the oscillator.
+	UART0_INIT();    
+	MEM_INIT(); 
+
+    SFRPAGE = LEGACY_PAGE;
+    IT0     = 1;                // /INT0 is active low triggered.
+
+    SFRPAGE = UART0_PAGE;       // Direct the output to UART0
+                                // printf() must set its own SFRPAGE to UART0_PAGE
+	
+	printf("\033[2J\033[r");
+	printf("Hallo Vietnaaaam\n\r");
+
+	P1 = 0xFF;
+
+    while (1)                  
+    {
+		if(loop()) return;
+		
+	}
+}
+
+unsigned int map(unsigned char index){
+	unsigned char i;
+	unsigned int output = 1;
+	for(i=0; i<index; i++)
+		output *= 2;
+	return output;
+}
+
+char loop(void){
+
+	unsigned int i;
+	unsigned char j, parityCount;
+/*
+	__xdata unsigned char stuff[0xB000];
+	
+	SFRPAGE = UART0_PAGE;
+
+	getchar();
+
+	printf("\033[2J");
+
+	for(i=0x0000; i<0xB000; i++){
+		stuff[i] = count;
+		count++;
+		if(count > 0xF) count = 0;
+	}
+	
+	count = 0;
+	for(i=0x1FF0; i<0x4400; i++){
+		printf("0x%x	0x0%x	0x0%x\n\r",i, count, stuff[i] & 0x0F);
+		count++;
+		if(count > 0x0F) count = 0;
+	}
+		//*/
+//*
+	__xdata unsigned char stuff[0x27FF];
+	
+	SFRPAGE = UART0_PAGE;
+
+	getchar();
+
+	printf("\033[2J");
+
+	for(i=0x0000; i<0x27FF; i++){
+		stuff[i] = count;
+		parityCount = 0;
+		for(j=0; j<7; j++){
+			if(count & map(j)) parityCount++;
+			if(parityCount > 1) parityCount = 0;
+		}
+		
+		stuff[i] |= parityCount << 7;
+		count++;
+		if(count > 0x7F) count = 0;
+	}
+
+	stuff[0x2003] = 0x80;
+
+	stuff[0x2016] = 0x08;
+	
+	count = 0;
+	for(i=0x0000; i<0x27FF; i++){
+		printf("0x%x	0x%x	0x%x\n\r", i, count, stuff[i] & 0x7F);
+		
+		parityCount = 0;
+		for(j=0; j<7; j++){
+			if(stuff[i] & map(j)) parityCount++;
+			if(parityCount > 1) parityCount = 0;
+		}
+
+		if((parityCount << 7) != (stuff[i] & 0x80)){
+			printf("You goddamn failure\n\r");
+			getchar();
+		}
+
+		count++;
+		if(count > 0x7F) count = 0;
+	}
+	//*/
+	return 0;
+}
+
+//-------------------------------------------------------------------------------------------
+// PORT_Init
+//-------------------------------------------------------------------------------------------
+//
+// Configure the Crossbar and GPIO ports
+//
+void PORT_INIT(void)
+{
+    char SFRPAGE_SAVE;
+
+    SFRPAGE_SAVE = SFRPAGE;     // Save Current SFR page.
+
+    SFRPAGE = CONFIG_PAGE;
+    WDTCN   = 0xDE;             // Disable watchdog timer.
+    WDTCN   = 0xAD;
+    EA      = 1;                // Enable interrupts as selected.
+
+    XBR0    = 0x04;             // Enable UART0.
+    XBR1    = 0x00;             // /INT0 routed to port pin.
+    XBR2    = 0x40;             // Enable Crossbar and weak pull-ups.
+
+    P0MDOUT = 0x35;             
+    P0      = 0x0A; 
+	
+	P1MDOUT = 0xFF;
+
+	P4MDOUT = 0xFF;
+	P5MDOUT = 0xFF;
+	P6MDOUT = 0xFF;
+	P7MDOUT = 0xFF;
+
+	P4 = 0xFF;
+	P5 = 0xFF;
+	P6 = 0xFF;
+	P7 = 0xFF;
+
+    SFRPAGE = SFRPAGE_SAVE;     // Restore SFR page.
+}
+
+//-------------------------------------------------------------------------------------------
+// SYSCLK_Init
+//-------------------------------------------------------------------------------------------
+//
+// Initialize the system clock
+//
+void SYSCLK_INIT(void)
+{
+    int i;
+
+    char SFRPAGE_SAVE;
+
+    SFRPAGE_SAVE = SFRPAGE;     // Save Current SFR page.
+
+    SFRPAGE = CONFIG_PAGE;
+    OSCXCN  = 0x67;             // Start external oscillator
+    for(i=0; i < 256; i++);     // Wait for the oscillator to start up.
+    while(!(OSCXCN & 0x80));    // Check to see if the Crystal Oscillator Valid Flag is set.
+    CLKSEL  = 0x01;             // SYSCLK derived from the External Oscillator circuit.
+    OSCICN  = 0x00;             // Disable the internal oscillator.
+
+    SFRPAGE = CONFIG_PAGE;
+    PLL0CN  = 0x04;
+    SFRPAGE = LEGACY_PAGE;
+    FLSCL   = 0x10;
+    SFRPAGE = CONFIG_PAGE;
+    PLL0CN |= 0x01;
+    PLL0DIV = 0x04;
+    PLL0FLT = 0x01;
+    PLL0MUL = 0x09;
+    for(i=0; i < 256; i++);
+    PLL0CN |= 0x02;
+    while(!(PLL0CN & 0x10));
+    CLKSEL  = 0x02;             // SYSCLK derived from the PLL.
+
+	ET0 = 1;
+	CKCON |= 0x08;
+	
+	SFRPAGE = TIMER01_PAGE;
+	TMOD &= 0xFD;
+	TMOD |= 0x01;
+
+	TH0 = 0x0D;
+	TL0 = 0x00;
+
+    SFRPAGE = SFRPAGE_SAVE;     // Restore SFR page.
+}
+
+//-------------------------------------------------------------------------------------------
+// UART0_Init
+//-------------------------------------------------------------------------------------------
+//
+// Configure the UART0 using Timer1, for <baudrate> and 8-N-1.
+//
+
+void UART0_INIT(void){
+
+	char SFRPAGE_SAVE;
+    
+	SFRPAGE_SAVE = SFRPAGE;
+
+ 	SFRPAGE = TIMER01_PAGE;
+    TMOD   &= ~0xF0;
+    TMOD   |=  0x20;            // Timer1, Mode 2: 8-bit counter/timer with auto-reload.
+    TH1     = (unsigned char)-(SYSCLK/BAUDRATE/16); // Set Timer1 reload value for baudrate
+    CKCON  |= 0x10;             // Timer1 uses SYSCLK as time base.
+    TL1     = TH1;
+    TR1     = 1;                // Start Timer1.
+
+    SFRPAGE = UART0_PAGE;
+    SCON0   = 0x50;             // Set Mode 1: 8-Bit UART
+    SSTA0   = 0x10;             // UART0 baud rate divide-by-two disabled (SMOD0 = 1).
+    TI0     = 1; 
+
+	SFRPAGE = SFRPAGE_SAVE;
+}
+
+void MEM_INIT(void){
+	char SFRPAGE_SAVE;
+    
+	SFRPAGE_SAVE = SFRPAGE;
+
+	SFRPAGE = 0;
+
+	EMI0CF = 0x37;
+
+
+	SFRPAGE = SFRPAGE_SAVE;
+}
